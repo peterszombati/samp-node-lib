@@ -1,0 +1,39 @@
+{
+  "name": "samp-node-lib",
+  "version": "1.0.0",
+  "description": "NodeJS library for Scripting San Andreas Multiplayer:SAMP depends on samp-node plugin",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "@sa-mp/node": "^0.2.0",
+    "@types/node": "^11.15.3",
+    "typescript": "^3.4.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterszombati/samp-node-lib.git"
+  },
+  "keywords": [
+    "samp",
+    "san-andreas-multiplayer",
+    "pawn",
+    "nodejs",
+    "gta",
+    "gta-samp",
+    "gta-san-andreas",
+    "gta-sa",
+    "library"
+  ],
+  "prepare": "npm run build",
+  "author": "Peter Szombati",
+  "license": "BSD 4-Clause",
+  "bugs": {
+    "url": "https://github.com/peterszombati/samp-node-lib/issues"
+  },
+  "homepage": "https://github.com/peterszombati/samp-node-lib#readme"
+}
