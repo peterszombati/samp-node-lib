@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "target": "es6",
+    "outDir": "build",
+    "declaration": true,
+    "strictNullChecks": true,
+    "types": ["@sa-mp/node","@types/node"]
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    ".idea",
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.d.ts"
+  ]
+}
