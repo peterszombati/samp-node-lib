@@ -7,7 +7,9 @@ some part of source code was auto generated with NodeJS
 Step 0 install [samp-node](https://github.com/AmyrAhmady/samp-node)
 
 Step 1 install samp-node-lib via [npm](https://www.npmjs.com/package/samp-node-lib)
-
+```
+npm i samp-node-lib
+```
 ## Example usage
 
 ```ts
