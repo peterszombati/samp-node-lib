@@ -47,7 +47,7 @@ OnGameModeInit(() => {
         .setOpen(809.5, 839.2, 10.9, 0.0, 0.0, 114.99);
 });
 
-OnPlayerCommandText((playerid, cmdtext) => {
+OnPlayerCommandText((player, cmdtext) => {
     if (cmdtext === '/open') {
         o1.open();
         o2.open();
