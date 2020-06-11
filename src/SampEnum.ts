@@ -210,3 +210,13 @@ export enum CARMODTYPE {
     VENT_RIGHT = 12,
     VENT_LEFT = 13
 }
+
+export enum BODY_PARTS {
+    TORSO = 3,
+    GROIN,
+    LEFT_ARM ,
+    RIGHT_ARM,
+    LEFT_LEG,
+    RIGHT_LEG,
+    HEAD
+}

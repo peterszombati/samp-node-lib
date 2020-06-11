@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
  */
 import {SampPlayer} from "./SampPlayer";
-import {KEY} from "./SampEnum";
+import {KEY, BODY_PARTS} from "./SampEnum";
 import {SampPlayers} from "./SampPlayers";
 
 export const OnGameModeInit = (func: () => void): void => {
@@ -157,7 +157,7 @@ export const OnActorStreamOut = (func: (actorid: number, forplayer: SampPlayer) 
 export const OnDialogResponse = (func: (player: SampPlayer, dialogid: number, response: number, listitem: number, inputtext: string) => void): void => {
     SampEvents.OnDialogResponse(func);
 };
-export const OnPlayerTakeDamage = (func: (player: SampPlayer, issuerid: number, amount: number, weaponid: number, bodypart: number) => void): void => {
+export const OnPlayerTakeDamage = (func: (player: SampPlayer, issuerid: number, amount: number, weaponid: number, bodypart: BODY_PARTS) => void): void => {
     SampEvents.OnPlayerTakeDamage(func);
 };
 export const OnPlayerGiveDamage = (func: (player: SampPlayer, damagedid: number, amount: number, weaponid: number, bodypart: number) => void): void => {
@@ -381,7 +381,7 @@ export class SampEvents {
         samp.on('OnDialogResponse', ((playerid, dialogid, response, listitem, inputtext) => func(SampPlayers.getClass(playerid), dialogid, response, listitem, inputtext)));
     }
 
-    static OnPlayerTakeDamage(func: (player: SampPlayer, issuerid: number, amount: number, weaponid: number, bodypart: number) => void) {
+    static OnPlayerTakeDamage(func: (player: SampPlayer, issuerid: number, amount: number, weaponid: number, bodypart: BODY_PARTS) => void) {
         samp.on('OnPlayerTakeDamage', ((playerid, issuerid, amount, weaponid, bodypart) => func(SampPlayers.getClass(playerid), issuerid, amount, weaponid, bodypart)));
     }
 
