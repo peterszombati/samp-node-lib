@@ -204,5 +204,6 @@ import {getAllVehicle} from "./getAllVehicle";
 import {getPlayers} from "./getPlayers";
 import {rgba} from "./rgba";
 import {SampPlayer} from "./SampPlayer";
+import {SampNode} from "./SampNode";
 
-export {TextDraw,TextDraws,vehicleNames, GetVehicleName, GetVehicleModelId,DynamicObject,getAllVehicle,getPlayers,rgba,SampPlayer};
+export {TextDraw,TextDraws,vehicleNames, GetVehicleName, GetVehicleModelId,DynamicObject,getAllVehicle,getPlayers,rgba,SampPlayer,SampNode};
