@@ -1,3 +1,12 @@
+export enum DIALOG_STYLE {
+    MSGBOX = 0,
+    INPUT = 1,
+    LIST = 2,
+    PASSWORD = 3,
+    TABLIST = 4,
+    TABLIST_HEADERS = 5
+}
+
 export enum KEY {
     ACTION = 1,
     CROUCH = 2,
