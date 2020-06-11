@@ -21,7 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
  */
-import {FIGHT_STYLE, PLAYER_STATE, TEXTDRAW_ALIGN, VEHICLE_MODEL_INFO, WEAPONSKILL} from "./SampEnum";
+import {CARMODTYPE, FIGHT_STYLE, PLAYER_STATE, TEXTDRAW_ALIGN, VEHICLE_MODEL_INFO, WEAPONSKILL} from "./SampEnum";
 import {rgba} from "./rgba";
 
 export const SendClientMessage = (playerid: number, color: string, message: string): number => {
@@ -1236,7 +1236,7 @@ export const SetVehicleNumberPlate = (vehicleid: number, numberplate: string): n
 export const GetVehicleModel = (vehicleid: number): number => {
     return SampFunctions.GetVehicleModel(vehicleid);
 };
-export const GetVehicleComponentInSlot = (vehicleid: number, slot: number): number => {
+export const GetVehicleComponentInSlot = (vehicleid: number, slot: CARMODTYPE): number => {
     return SampFunctions.GetVehicleComponentInSlot(vehicleid, slot);
 };
 export const GetVehicleComponentType = (component: number): number => {
@@ -2920,7 +2920,7 @@ export class SampFunctions {
         return samp.callNative('GetVehicleModel', 'i', vehicleid);
     }
 
-    static GetVehicleComponentInSlot(vehicleid: number, slot: number): number {
+    static GetVehicleComponentInSlot(vehicleid: number, slot: CARMODTYPE): number {
         return samp.callNative('GetVehicleComponentInSlot', 'ii', vehicleid, slot);
     }
 

@@ -193,3 +193,20 @@ export enum TEXTDRAW_ALIGN {
     CENTER = 2,
     RIGHT = 3
 }
+
+export enum CARMODTYPE {
+    SPOILER = 0,
+    HOOD = 1,
+    ROOF = 2,
+    SIDESKIRT = 3,
+    LAMPS = 4,
+    NITRO = 5,
+    EXHAUST = 6,
+    WHEELS = 7,
+    STEREO = 8,
+    HYDRAULICS = 9,
+    FRONT_BUMPER = 10,
+    REAR_BUMPER = 11,
+    VENT_RIGHT = 12,
+    VENT_LEFT = 13
+}
