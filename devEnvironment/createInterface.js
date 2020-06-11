@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const txt = fs.readFileSync(path.join(process.cwd(), 'scripts', 'src.txt')).toString().split(/\r?\n/).filter(l => l.trim().indexOf('static') === 0);
+const txt = fs.readFileSync(path.join(process.cwd(), 'devEnvironment', 'src.txt')).toString().split(/\r?\n/).filter(l => l.trim().indexOf('static') === 0);
 
 function splitter(str) {
     let params = [];
@@ -53,7 +53,7 @@ const data = txt.map(line => {
     }
 }).filter((d) => d !== null);
 
-fs.writeFileSync(path.join(process.cwd(), 'scripts', 'interface.json'), JSON.stringify(data.map(d => {
+fs.writeFileSync(path.join(process.cwd(), 'devEnvironment', 'interface.json'), JSON.stringify(data.map(d => {
     return {
         ...d,
         params: d.params.map(p => {
