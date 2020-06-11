@@ -1239,7 +1239,7 @@ export const GetVehicleModel = (vehicleid: number): number => {
 export const GetVehicleComponentInSlot = (vehicleid: number, slot: CARMODTYPE): number => {
     return SampFunctions.GetVehicleComponentInSlot(vehicleid, slot);
 };
-export const GetVehicleComponentType = (component: number): number => {
+export const GetVehicleComponentType = (component: number): CARMODTYPE | -1 => {
     return SampFunctions.GetVehicleComponentType(component);
 };
 export const RepairVehicle = (vehicleid: number): number => {
@@ -2924,7 +2924,7 @@ export class SampFunctions {
         return samp.callNative('GetVehicleComponentInSlot', 'ii', vehicleid, slot);
     }
 
-    static GetVehicleComponentType(component: number): number {
+    static GetVehicleComponentType(component: number): CARMODTYPE | -1 {
         return samp.callNative('GetVehicleComponentType', 'i', component);
     }
 
