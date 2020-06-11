@@ -1,0 +1,1 @@
+some part of source code was auto generated with interface.json

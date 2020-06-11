@@ -1,0 +1,10822 @@
+[
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnGameModeInit'"
+			],
+			[
+				"func",
+				"() => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnGameModeExit'"
+			],
+			[
+				"func",
+				"() => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnFilterScriptInit'"
+			],
+			[
+				"func",
+				"() => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnFilterScriptExit'"
+			],
+			[
+				"func",
+				"() => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerConnect'"
+			],
+			[
+				"func",
+				"(playerid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerDisconnect'"
+			],
+			[
+				"func",
+				"(playerid: number, reason: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerSpawn'"
+			],
+			[
+				"func",
+				"(playerid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerDeath'"
+			],
+			[
+				"func",
+				"(playerid: number, killerid: number, reason: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnVehicleSpawn'"
+			],
+			[
+				"func",
+				"(vehicleid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnVehicleDeath'"
+			],
+			[
+				"func",
+				"(vehicleid: number, killerid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerText'"
+			],
+			[
+				"func",
+				"(playerid: number, text: string) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerCommandText'"
+			],
+			[
+				"func",
+				"(playerid: number, cmdtext: string) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerRequestClass'"
+			],
+			[
+				"func",
+				"(playerid: number, classid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerEnterVehicle'"
+			],
+			[
+				"func",
+				"(playerid: number, vehicleid: number, ispassenger: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerExitVehicle'"
+			],
+			[
+				"func",
+				"(playerid: number, vehicleid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerStateChange'"
+			],
+			[
+				"func",
+				"(playerid: number, newstate: number, oldstate: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerEnterCheckpoint'"
+			],
+			[
+				"func",
+				"(playerid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerLeaveCheckpoint'"
+			],
+			[
+				"func",
+				"(playerid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerEnterRaceCheckpoint'"
+			],
+			[
+				"func",
+				"(playerid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerLeaveRaceCheckpoint'"
+			],
+			[
+				"func",
+				"(playerid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnRconCommand'"
+			],
+			[
+				"func",
+				"(cmd: string) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerRequestSpawn'"
+			],
+			[
+				"func",
+				"(playerid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnObjectMoved'"
+			],
+			[
+				"func",
+				"(objectid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerObjectMoved'"
+			],
+			[
+				"func",
+				"(playerid: number, objectid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerPickUpPickup'"
+			],
+			[
+				"func",
+				"(playerid: number, pickupid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnVehicleMod'"
+			],
+			[
+				"func",
+				"(playerid: number, vehicleid: number, componentid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnEnterExitModShop'"
+			],
+			[
+				"func",
+				"(playerid: number, enterexit: number, interiorid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnVehiclePaintjob'"
+			],
+			[
+				"func",
+				"(playerid: number, vehicleid: number, paintjobid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnVehicleRespray'"
+			],
+			[
+				"func",
+				"(playerid: number, vehicleid: number, color1: number, color2: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnVehicleDamageStatusUpdate'"
+			],
+			[
+				"func",
+				"(vehicleid: number, playerid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnUnoccupiedVehicleUpdate'"
+			],
+			[
+				"func",
+				"(vehicleid: number, playerid: number, passenger_seat: number, new_x: number, new_y: number, new_z: number, vel_x: number, vel_y: number, vel_z: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerSelectedMenuRow'"
+			],
+			[
+				"func",
+				"(playerid: number, row: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerExitedMenu'"
+			],
+			[
+				"func",
+				"(playerid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerInteriorChange'"
+			],
+			[
+				"func",
+				"(playerid: number, newinteriorid: number, oldinteriorid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerKeyStateChange'"
+			],
+			[
+				"func",
+				"(playerid: number, newkeys: number, oldkeys: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnRconLoginAttempt'"
+			],
+			[
+				"func",
+				"(ip: string, password: string, success: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerUpdate'"
+			],
+			[
+				"func",
+				"(playerid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerStreamIn'"
+			],
+			[
+				"func",
+				"(playerid: number, forplayerid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerStreamOut'"
+			],
+			[
+				"func",
+				"(playerid: number, forplayerid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnVehicleStreamIn'"
+			],
+			[
+				"func",
+				"(vehicleid: number, forplayerid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnVehicleStreamOut'"
+			],
+			[
+				"func",
+				"(vehicleid: number, forplayerid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnActorStreamIn'"
+			],
+			[
+				"func",
+				"(actorid: number, forplayerid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnActorStreamOut'"
+			],
+			[
+				"func",
+				"(actorid: number, forplayerid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnDialogResponse'"
+			],
+			[
+				"func",
+				"(playerid: number, dialogid: number, response: number, listitem: number, inputtext: string) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerTakeDamage'"
+			],
+			[
+				"func",
+				"(playerid: number, issuerid: number, amount: number, weaponid: number, bodypart: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerGiveDamage'"
+			],
+			[
+				"func",
+				"(playerid: number, damagedid: number, amount: number, weaponid: number, bodypart: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerGiveDamageActor'"
+			],
+			[
+				"func",
+				"(playerid: number, damaged_actorid: number, amount: number, weaponid: number, bodypart: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerClickMap'"
+			],
+			[
+				"func",
+				"(playerid: number, fX: number, fY: number, fZ: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerClickTextDraw'"
+			],
+			[
+				"func",
+				"(playerid: number, clickedid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerClickPlayerTextDraw'"
+			],
+			[
+				"func",
+				"(playerid: number, playertextid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnIncomingConnection'"
+			],
+			[
+				"func",
+				"(playerid: number, ip_address: string, port: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnTrailerUpdate'"
+			],
+			[
+				"func",
+				"(playerid: number, vehicleid: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnVehicleSirenStateChange'"
+			],
+			[
+				"func",
+				"(playerid: number, vehicleid: number, newstate: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerFinishedDownloading'"
+			],
+			[
+				"func",
+				"(playerid: number, virtualworld: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerClickPlayer'"
+			],
+			[
+				"func",
+				"(playerid: number, clickedplayerid: number, source: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerSelectObject'"
+			],
+			[
+				"func",
+				"(playerid: number, type: number, objectid: number, modelid: number, fX: number, fY: number, fZ: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnPlayerWeaponShot'"
+			],
+			[
+				"func",
+				"(playerid: number, weaponid: number, hittype: number, hitid: number, fX: number, fY: number, fZ: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnClientCheckResponse'"
+			],
+			[
+				"func",
+				"(playerid: number, actionid: number, memaddr: number, retndata: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"'OnScriptCash'"
+			],
+			[
+				"func",
+				"(playerid: number, amount: number, source: number) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "on",
+		"params": [
+			[
+				"eventName",
+				"string"
+			],
+			[
+				"func",
+				"(...args: Array<any>) => void"
+			]
+		],
+		"returnType": "void"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SendClientMessage'"
+			],
+			[
+				"paramTypes",
+				"'iis'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"color",
+				"number"
+			],
+			[
+				"message",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SendClientMessageToAll'"
+			],
+			[
+				"paramTypes",
+				"'is'"
+			],
+			[
+				"color",
+				"number"
+			],
+			[
+				"message",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SendPlayerMessageToPlayer'"
+			],
+			[
+				"paramTypes",
+				"'iis'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"senderid",
+				"number"
+			],
+			[
+				"message",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SendPlayerMessageToAll'"
+			],
+			[
+				"paramTypes",
+				"'is'"
+			],
+			[
+				"senderid",
+				"number"
+			],
+			[
+				"message",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SendDeathMessage'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"killer",
+				"number"
+			],
+			[
+				"killee",
+				"number"
+			],
+			[
+				"weapon",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SendDeathMessageToPlayer'"
+			],
+			[
+				"paramTypes",
+				"'iiii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"killer",
+				"number"
+			],
+			[
+				"killee",
+				"number"
+			],
+			[
+				"weapon",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GameTextForAll'"
+			],
+			[
+				"paramTypes",
+				"'sii'"
+			],
+			[
+				"string",
+				"string"
+			],
+			[
+				"time",
+				"number"
+			],
+			[
+				"style",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GameTextForPlayer'"
+			],
+			[
+				"paramTypes",
+				"'isii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"string",
+				"string"
+			],
+			[
+				"time",
+				"number"
+			],
+			[
+				"style",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetTimer'"
+			],
+			[
+				"paramTypes",
+				"'sii'"
+			],
+			[
+				"funcname",
+				"string"
+			],
+			[
+				"interval",
+				"number"
+			],
+			[
+				"repeating",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'KillTimer'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"timerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetTickCount'"
+			],
+			[
+				"paramTypes",
+				"''"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetMaxPlayers'"
+			],
+			[
+				"paramTypes",
+				"''"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNativeFloat",
+		"params": [
+			[
+				"nativeName",
+				"'VectorSize'"
+			],
+			[
+				"paramTypes",
+				"'fff'"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			],
+			[
+				"z",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNativeFloat",
+		"params": [
+			[
+				"nativeName",
+				"'asin'"
+			],
+			[
+				"paramTypes",
+				"'f'"
+			],
+			[
+				"value",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNativeFloat",
+		"params": [
+			[
+				"nativeName",
+				"'acos'"
+			],
+			[
+				"paramTypes",
+				"'f'"
+			],
+			[
+				"value",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNativeFloat",
+		"params": [
+			[
+				"nativeName",
+				"'atan'"
+			],
+			[
+				"paramTypes",
+				"'f'"
+			],
+			[
+				"value",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNativeFloat",
+		"params": [
+			[
+				"nativeName",
+				"'atan2'"
+			],
+			[
+				"paramTypes",
+				"'ff'"
+			],
+			[
+				"y",
+				"number"
+			],
+			[
+				"x",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerPoolSize'"
+			],
+			[
+				"paramTypes",
+				"''"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetVehiclePoolSize'"
+			],
+			[
+				"paramTypes",
+				"''"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetActorPoolSize'"
+			],
+			[
+				"paramTypes",
+				"''"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SHA256_PassHash'"
+			],
+			[
+				"paramTypes",
+				"'ssSi'"
+			],
+			[
+				"password",
+				"string"
+			],
+			[
+				"salt",
+				"string"
+			],
+			[
+				"ret_hash_len",
+				"number"
+			]
+		],
+		"returnType": "string"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetSVarInt'"
+			],
+			[
+				"paramTypes",
+				"'si'"
+			],
+			[
+				"varname",
+				"string"
+			],
+			[
+				"int_value",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetSVarInt'"
+			],
+			[
+				"paramTypes",
+				"'s'"
+			],
+			[
+				"varname",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetSVarString'"
+			],
+			[
+				"paramTypes",
+				"'ss'"
+			],
+			[
+				"varname",
+				"string"
+			],
+			[
+				"string_value",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetSVarString'"
+			],
+			[
+				"paramTypes",
+				"'sSi'"
+			],
+			[
+				"varname",
+				"string"
+			],
+			[
+				"len",
+				"number"
+			]
+		],
+		"returnType": "string"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetSVarFloat'"
+			],
+			[
+				"paramTypes",
+				"'sf'"
+			],
+			[
+				"varname",
+				"string"
+			],
+			[
+				"float_value",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNativeFloat",
+		"params": [
+			[
+				"nativeName",
+				"'GetSVarFloat'"
+			],
+			[
+				"paramTypes",
+				"'s'"
+			],
+			[
+				"varname",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'DeleteSVar'"
+			],
+			[
+				"paramTypes",
+				"'s'"
+			],
+			[
+				"varname",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetSVarsUpperIndex'"
+			],
+			[
+				"paramTypes",
+				"''"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetSVarNameAtIndex'"
+			],
+			[
+				"paramTypes",
+				"'iSi'"
+			],
+			[
+				"index",
+				"number"
+			],
+			[
+				"ret_len",
+				"number"
+			]
+		],
+		"returnType": "string"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetSVarType'"
+			],
+			[
+				"paramTypes",
+				"'s'"
+			],
+			[
+				"varname",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetGameModeText'"
+			],
+			[
+				"paramTypes",
+				"'s'"
+			],
+			[
+				"string",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetTeamCount'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"count",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'AddPlayerClass'"
+			],
+			[
+				"paramTypes",
+				"'iffffiiiiii'"
+			],
+			[
+				"modelid",
+				"number"
+			],
+			[
+				"spawn_x",
+				"number"
+			],
+			[
+				"spawn_y",
+				"number"
+			],
+			[
+				"spawn_z",
+				"number"
+			],
+			[
+				"z_angle",
+				"number"
+			],
+			[
+				"weapon1",
+				"number"
+			],
+			[
+				"weapon1_ammo",
+				"number"
+			],
+			[
+				"weapon2",
+				"number"
+			],
+			[
+				"weapon2_ammo",
+				"number"
+			],
+			[
+				"weapon3",
+				"number"
+			],
+			[
+				"weapon3_ammo",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'AddPlayerClassEx'"
+			],
+			[
+				"paramTypes",
+				"'iiffffiiiiii'"
+			],
+			[
+				"teamid",
+				"number"
+			],
+			[
+				"modelid",
+				"number"
+			],
+			[
+				"spawn_x",
+				"number"
+			],
+			[
+				"spawn_y",
+				"number"
+			],
+			[
+				"spawn_z",
+				"number"
+			],
+			[
+				"z_angle",
+				"number"
+			],
+			[
+				"weapon1",
+				"number"
+			],
+			[
+				"weapon1_ammo",
+				"number"
+			],
+			[
+				"weapon2",
+				"number"
+			],
+			[
+				"weapon2_ammo",
+				"number"
+			],
+			[
+				"weapon3",
+				"number"
+			],
+			[
+				"weapon3_ammo",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'AddStaticVehicle'"
+			],
+			[
+				"paramTypes",
+				"'iffffii'"
+			],
+			[
+				"modelid",
+				"number"
+			],
+			[
+				"spawn_x",
+				"number"
+			],
+			[
+				"spawn_y",
+				"number"
+			],
+			[
+				"spawn_z",
+				"number"
+			],
+			[
+				"z_angle",
+				"number"
+			],
+			[
+				"color1",
+				"number"
+			],
+			[
+				"color2",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'AddStaticVehicleEx'"
+			],
+			[
+				"paramTypes",
+				"'iffffiiii'"
+			],
+			[
+				"modelid",
+				"number"
+			],
+			[
+				"spawn_x",
+				"number"
+			],
+			[
+				"spawn_y",
+				"number"
+			],
+			[
+				"spawn_z",
+				"number"
+			],
+			[
+				"z_angle",
+				"number"
+			],
+			[
+				"color1",
+				"number"
+			],
+			[
+				"color2",
+				"number"
+			],
+			[
+				"respawn_delay",
+				"number"
+			],
+			[
+				"addsiren",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'AddStaticPickup'"
+			],
+			[
+				"paramTypes",
+				"'iifffi'"
+			],
+			[
+				"model",
+				"number"
+			],
+			[
+				"type",
+				"number"
+			],
+			[
+				"X",
+				"number"
+			],
+			[
+				"Y",
+				"number"
+			],
+			[
+				"Z",
+				"number"
+			],
+			[
+				"virtualworld",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'CreatePickup'"
+			],
+			[
+				"paramTypes",
+				"'iifffi'"
+			],
+			[
+				"model",
+				"number"
+			],
+			[
+				"type",
+				"number"
+			],
+			[
+				"X",
+				"number"
+			],
+			[
+				"Y",
+				"number"
+			],
+			[
+				"Z",
+				"number"
+			],
+			[
+				"virtualworld",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'DestroyPickup'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"pickup",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'ShowNameTags'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"show",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'ShowPlayerMarkers'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"mode",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GameModeExit'"
+			],
+			[
+				"paramTypes",
+				"''"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetWorldTime'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"hour",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetWeaponName'"
+			],
+			[
+				"paramTypes",
+				"'iSi'"
+			],
+			[
+				"weaponid",
+				"number"
+			],
+			[
+				"len",
+				"number"
+			]
+		],
+		"returnType": "string"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'EnableTirePopping'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"enable",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'EnableVehicleFriendlyFire'"
+			],
+			[
+				"paramTypes",
+				"''"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'AllowInteriorWeapons'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"allow",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetWeather'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"weatherid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNativeFloat",
+		"params": [
+			[
+				"nativeName",
+				"'GetGravity'"
+			],
+			[
+				"paramTypes",
+				"''"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetGravity'"
+			],
+			[
+				"paramTypes",
+				"'f'"
+			],
+			[
+				"gravity",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'AllowAdminTeleport'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"allow",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetDeathDropAmount'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"amount",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'CreateExplosion'"
+			],
+			[
+				"paramTypes",
+				"'fffif'"
+			],
+			[
+				"X",
+				"number"
+			],
+			[
+				"Y",
+				"number"
+			],
+			[
+				"Z",
+				"number"
+			],
+			[
+				"type",
+				"number"
+			],
+			[
+				"Radius",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'EnableZoneNames'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"enable",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'UsePlayerPedAnims'"
+			],
+			[
+				"paramTypes",
+				"''"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'DisableInteriorEnterExits'"
+			],
+			[
+				"paramTypes",
+				"''"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetNameTagDrawDistance'"
+			],
+			[
+				"paramTypes",
+				"'f'"
+			],
+			[
+				"distance",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'DisableNameTagLOS'"
+			],
+			[
+				"paramTypes",
+				"''"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'LimitGlobalChatRadius'"
+			],
+			[
+				"paramTypes",
+				"'f'"
+			],
+			[
+				"chat_radius",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'LimitPlayerMarkerRadius'"
+			],
+			[
+				"paramTypes",
+				"'f'"
+			],
+			[
+				"marker_radius",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'ConnectNPC'"
+			],
+			[
+				"paramTypes",
+				"'ss'"
+			],
+			[
+				"name",
+				"string"
+			],
+			[
+				"script",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsPlayerNPC'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsPlayerAdmin'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'Kick'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'Ban'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'BanEx'"
+			],
+			[
+				"paramTypes",
+				"'is'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"reason",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SendRconCommand'"
+			],
+			[
+				"paramTypes",
+				"'s'"
+			],
+			[
+				"command",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerNetworkStats'"
+			],
+			[
+				"paramTypes",
+				"'iSi'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"retstr_size",
+				"number"
+			]
+		],
+		"returnType": "string"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetNetworkStats'"
+			],
+			[
+				"paramTypes",
+				"'Si'"
+			],
+			[
+				"retstr_size",
+				"number"
+			]
+		],
+		"returnType": "string"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerVersion'"
+			],
+			[
+				"paramTypes",
+				"'iSi'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"len",
+				"number"
+			]
+		],
+		"returnType": "string"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'BlockIpAddress'"
+			],
+			[
+				"paramTypes",
+				"'si'"
+			],
+			[
+				"ip_address",
+				"string"
+			],
+			[
+				"timems",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'UnBlockIpAddress'"
+			],
+			[
+				"paramTypes",
+				"'s'"
+			],
+			[
+				"ip_address",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetServerVarAsString'"
+			],
+			[
+				"paramTypes",
+				"'sSi'"
+			],
+			[
+				"varname",
+				"string"
+			],
+			[
+				"len",
+				"number"
+			]
+		],
+		"returnType": "string"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetServerVarAsInt'"
+			],
+			[
+				"paramTypes",
+				"'s'"
+			],
+			[
+				"varname",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetServerVarAsBool'"
+			],
+			[
+				"paramTypes",
+				"'s'"
+			],
+			[
+				"varname",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetConsoleVarAsString'"
+			],
+			[
+				"paramTypes",
+				"'sSi'"
+			],
+			[
+				"varname",
+				"string"
+			],
+			[
+				"len",
+				"number"
+			]
+		],
+		"returnType": "string"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetConsoleVarAsInt'"
+			],
+			[
+				"paramTypes",
+				"'s'"
+			],
+			[
+				"varname",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetConsoleVarAsBool'"
+			],
+			[
+				"paramTypes",
+				"'s'"
+			],
+			[
+				"varname",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetServerTickRate'"
+			],
+			[
+				"paramTypes",
+				"''"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'NetStats_GetConnectedTime'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'NetStats_MessagesReceived'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'NetStats_BytesReceived'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'NetStats_MessagesSent'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'NetStats_BytesSent'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'NetStats_MessagesRecvPerSecond'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNativeFloat",
+		"params": [
+			[
+				"nativeName",
+				"'NetStats_PacketLossPercent'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'NetStats_ConnectionStatus'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'NetStats_GetIpPort'"
+			],
+			[
+				"paramTypes",
+				"'iSi'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"ip_port_len",
+				"number"
+			]
+		],
+		"returnType": "string"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'CreateMenu'"
+			],
+			[
+				"paramTypes",
+				"'siffff'"
+			],
+			[
+				"title",
+				"string"
+			],
+			[
+				"columns",
+				"number"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			],
+			[
+				"col1width",
+				"number"
+			],
+			[
+				"col2width",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'DestroyMenu'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"menuid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'AddMenuItem'"
+			],
+			[
+				"paramTypes",
+				"'iis'"
+			],
+			[
+				"menuid",
+				"number"
+			],
+			[
+				"column",
+				"number"
+			],
+			[
+				"menutext",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetMenuColumnHeader'"
+			],
+			[
+				"paramTypes",
+				"'iis'"
+			],
+			[
+				"menuid",
+				"number"
+			],
+			[
+				"column",
+				"number"
+			],
+			[
+				"columnheader",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'ShowMenuForPlayer'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"menuid",
+				"number"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'HideMenuForPlayer'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"menuid",
+				"number"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsValidMenu'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"menuid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'DisableMenu'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"menuid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'DisableMenuRow'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"menuid",
+				"number"
+			],
+			[
+				"row",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerMenu'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawCreate'"
+			],
+			[
+				"paramTypes",
+				"'ffs'"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			],
+			[
+				"text",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawDestroy'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"text",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawLetterSize'"
+			],
+			[
+				"paramTypes",
+				"'iff'"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawTextSize'"
+			],
+			[
+				"paramTypes",
+				"'iff'"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawAlignment'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"alignment",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawColor'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"color",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawUseBox'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"use",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawBoxColor'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"color",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawSetShadow'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"size",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawSetOutline'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"size",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawBackgroundColor'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"color",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawFont'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"font",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawSetProportional'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"set",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawSetSelectable'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"set",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawShowForPlayer'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawHideForPlayer'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawShowForAll'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"text",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawHideForAll'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"text",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawSetString'"
+			],
+			[
+				"paramTypes",
+				"'is'"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"string",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawSetPreviewModel'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"modelindex",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawSetPreviewRot'"
+			],
+			[
+				"paramTypes",
+				"'iffff'"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"fRotX",
+				"number"
+			],
+			[
+				"fRotY",
+				"number"
+			],
+			[
+				"fRotZ",
+				"number"
+			],
+			[
+				"fZoom",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TextDrawSetPreviewVehCol'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"color1",
+				"number"
+			],
+			[
+				"color2",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GangZoneCreate'"
+			],
+			[
+				"paramTypes",
+				"'ffff'"
+			],
+			[
+				"minx",
+				"number"
+			],
+			[
+				"miny",
+				"number"
+			],
+			[
+				"maxx",
+				"number"
+			],
+			[
+				"maxy",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GangZoneDestroy'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"zone",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GangZoneShowForPlayer'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"zone",
+				"number"
+			],
+			[
+				"color",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GangZoneShowForAll'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"zone",
+				"number"
+			],
+			[
+				"color",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GangZoneHideForPlayer'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"zone",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GangZoneHideForAll'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"zone",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GangZoneFlashForPlayer'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"zone",
+				"number"
+			],
+			[
+				"flashcolor",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GangZoneFlashForAll'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"zone",
+				"number"
+			],
+			[
+				"flashcolor",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GangZoneStopFlashForPlayer'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"zone",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GangZoneStopFlashForAll'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"zone",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'Create3DTextLabel'"
+			],
+			[
+				"paramTypes",
+				"'siffffii'"
+			],
+			[
+				"text",
+				"string"
+			],
+			[
+				"color",
+				"number"
+			],
+			[
+				"X",
+				"number"
+			],
+			[
+				"Y",
+				"number"
+			],
+			[
+				"Z",
+				"number"
+			],
+			[
+				"DrawDistance",
+				"number"
+			],
+			[
+				"virtualworld",
+				"number"
+			],
+			[
+				"testLOS",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'Delete3DTextLabel'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"id",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'Attach3DTextLabelToPlayer'"
+			],
+			[
+				"paramTypes",
+				"'iifff'"
+			],
+			[
+				"id",
+				"number"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"OffsetX",
+				"number"
+			],
+			[
+				"OffsetY",
+				"number"
+			],
+			[
+				"OffsetZ",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'Attach3DTextLabelToVehicle'"
+			],
+			[
+				"paramTypes",
+				"'iifff'"
+			],
+			[
+				"id",
+				"number"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"OffsetX",
+				"number"
+			],
+			[
+				"OffsetY",
+				"number"
+			],
+			[
+				"OffsetZ",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'Update3DTextLabelText'"
+			],
+			[
+				"paramTypes",
+				"'iis'"
+			],
+			[
+				"id",
+				"number"
+			],
+			[
+				"color",
+				"number"
+			],
+			[
+				"text",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'CreatePlayer3DTextLabel'"
+			],
+			[
+				"paramTypes",
+				"'isiffffiii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"string"
+			],
+			[
+				"color",
+				"number"
+			],
+			[
+				"X",
+				"number"
+			],
+			[
+				"Y",
+				"number"
+			],
+			[
+				"Z",
+				"number"
+			],
+			[
+				"DrawDistance",
+				"number"
+			],
+			[
+				"attachedplayer",
+				"number"
+			],
+			[
+				"attachedvehicle",
+				"number"
+			],
+			[
+				"testLOS",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'DeletePlayer3DTextLabel'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"id",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'UpdatePlayer3DTextLabelText'"
+			],
+			[
+				"paramTypes",
+				"'iiis'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"id",
+				"number"
+			],
+			[
+				"color",
+				"number"
+			],
+			[
+				"text",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'ShowPlayerDialog'"
+			],
+			[
+				"paramTypes",
+				"'iiissss'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"dialogid",
+				"number"
+			],
+			[
+				"style",
+				"number"
+			],
+			[
+				"caption",
+				"string"
+			],
+			[
+				"info",
+				"string"
+			],
+			[
+				"button1",
+				"string"
+			],
+			[
+				"button2",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'gpci'"
+			],
+			[
+				"paramTypes",
+				"'iSi'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"maxlen",
+				"number"
+			]
+		],
+		"returnType": "string"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'CreateActor'"
+			],
+			[
+				"paramTypes",
+				"'iffff'"
+			],
+			[
+				"modelid",
+				"number"
+			],
+			[
+				"X",
+				"number"
+			],
+			[
+				"Y",
+				"number"
+			],
+			[
+				"Z",
+				"number"
+			],
+			[
+				"Rotation",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'DestroyActor'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"actorid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsActorStreamedIn'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"actorid",
+				"number"
+			],
+			[
+				"forplayerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetActorVirtualWorld'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"actorid",
+				"number"
+			],
+			[
+				"vworld",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetActorVirtualWorld'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"actorid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'ApplyActorAnimation'"
+			],
+			[
+				"paramTypes",
+				"'issfiiiii'"
+			],
+			[
+				"actorid",
+				"number"
+			],
+			[
+				"animlib",
+				"string"
+			],
+			[
+				"animname",
+				"string"
+			],
+			[
+				"fDelta",
+				"number"
+			],
+			[
+				"loop",
+				"number"
+			],
+			[
+				"lockx",
+				"number"
+			],
+			[
+				"locky",
+				"number"
+			],
+			[
+				"freeze",
+				"number"
+			],
+			[
+				"time",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'ClearActorAnimations'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"actorid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetActorPos'"
+			],
+			[
+				"paramTypes",
+				"'ifff'"
+			],
+			[
+				"actorid",
+				"number"
+			],
+			[
+				"X",
+				"number"
+			],
+			[
+				"Y",
+				"number"
+			],
+			[
+				"Z",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetActorPos'"
+			],
+			[
+				"paramTypes",
+				"'iFFF'"
+			],
+			[
+				"actorid",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetActorFacingAngle'"
+			],
+			[
+				"paramTypes",
+				"'if'"
+			],
+			[
+				"actorid",
+				"number"
+			],
+			[
+				"ang",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetActorFacingAngle'"
+			],
+			[
+				"paramTypes",
+				"'iF'"
+			],
+			[
+				"actorid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetActorHealth'"
+			],
+			[
+				"paramTypes",
+				"'if'"
+			],
+			[
+				"actorid",
+				"number"
+			],
+			[
+				"health",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetActorHealth'"
+			],
+			[
+				"paramTypes",
+				"'iF'"
+			],
+			[
+				"actorid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetActorInvulnerable'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"actorid",
+				"number"
+			],
+			[
+				"invulnerable",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsActorInvulnerable'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"actorid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsValidActor'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"actorid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'HTTP'"
+			],
+			[
+				"paramTypes",
+				"'iisss'"
+			],
+			[
+				"index",
+				"number"
+			],
+			[
+				"type",
+				"number"
+			],
+			[
+				"url",
+				"string"
+			],
+			[
+				"data",
+				"string"
+			],
+			[
+				"callback",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'CreateObject'"
+			],
+			[
+				"paramTypes",
+				"'ifffffff'"
+			],
+			[
+				"modelid",
+				"number"
+			],
+			[
+				"X",
+				"number"
+			],
+			[
+				"Y",
+				"number"
+			],
+			[
+				"Z",
+				"number"
+			],
+			[
+				"rX",
+				"number"
+			],
+			[
+				"rY",
+				"number"
+			],
+			[
+				"rZ",
+				"number"
+			],
+			[
+				"DrawDistance",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'AttachObjectToVehicle'"
+			],
+			[
+				"paramTypes",
+				"'iiffffff'"
+			],
+			[
+				"objectid",
+				"number"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"OffsetX",
+				"number"
+			],
+			[
+				"OffsetY",
+				"number"
+			],
+			[
+				"OffsetZ",
+				"number"
+			],
+			[
+				"RotX",
+				"number"
+			],
+			[
+				"RotY",
+				"number"
+			],
+			[
+				"RotZ",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'AttachObjectToObject'"
+			],
+			[
+				"paramTypes",
+				"'iiffffffi'"
+			],
+			[
+				"objectid",
+				"number"
+			],
+			[
+				"attachtoid",
+				"number"
+			],
+			[
+				"OffsetX",
+				"number"
+			],
+			[
+				"OffsetY",
+				"number"
+			],
+			[
+				"OffsetZ",
+				"number"
+			],
+			[
+				"RotX",
+				"number"
+			],
+			[
+				"RotY",
+				"number"
+			],
+			[
+				"RotZ",
+				"number"
+			],
+			[
+				"SyncRotation",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'AttachObjectToPlayer'"
+			],
+			[
+				"paramTypes",
+				"'iiffffff'"
+			],
+			[
+				"objectid",
+				"number"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"OffsetX",
+				"number"
+			],
+			[
+				"OffsetY",
+				"number"
+			],
+			[
+				"OffsetZ",
+				"number"
+			],
+			[
+				"RotX",
+				"number"
+			],
+			[
+				"RotY",
+				"number"
+			],
+			[
+				"RotZ",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetObjectPos'"
+			],
+			[
+				"paramTypes",
+				"'ifff'"
+			],
+			[
+				"objectid",
+				"number"
+			],
+			[
+				"X",
+				"number"
+			],
+			[
+				"Y",
+				"number"
+			],
+			[
+				"Z",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetObjectPos'"
+			],
+			[
+				"paramTypes",
+				"'iFFF'"
+			],
+			[
+				"objectid",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetObjectRot'"
+			],
+			[
+				"paramTypes",
+				"'ifff'"
+			],
+			[
+				"objectid",
+				"number"
+			],
+			[
+				"RotX",
+				"number"
+			],
+			[
+				"RotY",
+				"number"
+			],
+			[
+				"RotZ",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetObjectRot'"
+			],
+			[
+				"paramTypes",
+				"'iFFF'"
+			],
+			[
+				"objectid",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetObjectModel'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"objectid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetObjectNoCameraCol'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"objectid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsValidObject'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"objectid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'DestroyObject'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"objectid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'MoveObject'"
+			],
+			[
+				"paramTypes",
+				"'ifffffff'"
+			],
+			[
+				"objectid",
+				"number"
+			],
+			[
+				"X",
+				"number"
+			],
+			[
+				"Y",
+				"number"
+			],
+			[
+				"Z",
+				"number"
+			],
+			[
+				"Speed",
+				"number"
+			],
+			[
+				"RotX",
+				"number"
+			],
+			[
+				"RotY",
+				"number"
+			],
+			[
+				"RotZ",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'StopObject'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"objectid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsObjectMoving'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"objectid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'EditObject'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"objectid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'EditPlayerObject'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"objectid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SelectObject'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'CancelEdit'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'CreatePlayerObject'"
+			],
+			[
+				"paramTypes",
+				"'iifffffff'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"modelid",
+				"number"
+			],
+			[
+				"X",
+				"number"
+			],
+			[
+				"Y",
+				"number"
+			],
+			[
+				"Z",
+				"number"
+			],
+			[
+				"rX",
+				"number"
+			],
+			[
+				"rY",
+				"number"
+			],
+			[
+				"rZ",
+				"number"
+			],
+			[
+				"DrawDistance",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'AttachPlayerObjectToVehicle'"
+			],
+			[
+				"paramTypes",
+				"'iiiffffff'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"objectid",
+				"number"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"fOffsetX",
+				"number"
+			],
+			[
+				"fOffsetY",
+				"number"
+			],
+			[
+				"fOffsetZ",
+				"number"
+			],
+			[
+				"fRotX",
+				"number"
+			],
+			[
+				"fRotY",
+				"number"
+			],
+			[
+				"RotZ",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerObjectPos'"
+			],
+			[
+				"paramTypes",
+				"'iifff'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"objectid",
+				"number"
+			],
+			[
+				"X",
+				"number"
+			],
+			[
+				"Y",
+				"number"
+			],
+			[
+				"Z",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerObjectPos'"
+			],
+			[
+				"paramTypes",
+				"'iiFFF'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"objectid",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerObjectRot'"
+			],
+			[
+				"paramTypes",
+				"'iifff'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"objectid",
+				"number"
+			],
+			[
+				"RotX",
+				"number"
+			],
+			[
+				"RotY",
+				"number"
+			],
+			[
+				"RotZ",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerObjectRot'"
+			],
+			[
+				"paramTypes",
+				"'iiFFF'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"objectid",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerObjectModel'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"objectid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerObjectNoCameraCol'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"objectid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsValidPlayerObject'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"objectid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'DestroyPlayerObject'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"objectid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'MovePlayerObject'"
+			],
+			[
+				"paramTypes",
+				"'iifffffff'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"objectid",
+				"number"
+			],
+			[
+				"X",
+				"number"
+			],
+			[
+				"Y",
+				"number"
+			],
+			[
+				"Z",
+				"number"
+			],
+			[
+				"Speed",
+				"number"
+			],
+			[
+				"RotX",
+				"number"
+			],
+			[
+				"RotY",
+				"number"
+			],
+			[
+				"RotZ",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'StopPlayerObject'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"objectid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsPlayerObjectMoving'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"objectid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'AttachPlayerObjectToPlayer'"
+			],
+			[
+				"paramTypes",
+				"'iiiffffff'"
+			],
+			[
+				"objectplayer",
+				"number"
+			],
+			[
+				"objectid",
+				"number"
+			],
+			[
+				"attachplayer",
+				"number"
+			],
+			[
+				"OffsetX",
+				"number"
+			],
+			[
+				"OffsetY",
+				"number"
+			],
+			[
+				"OffsetZ",
+				"number"
+			],
+			[
+				"rX",
+				"number"
+			],
+			[
+				"rY",
+				"number"
+			],
+			[
+				"rZ",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetObjectMaterial'"
+			],
+			[
+				"paramTypes",
+				"'iiissi'"
+			],
+			[
+				"objectid",
+				"number"
+			],
+			[
+				"materialindex",
+				"number"
+			],
+			[
+				"modelid",
+				"number"
+			],
+			[
+				"txdname",
+				"string"
+			],
+			[
+				"texturename",
+				"string"
+			],
+			[
+				"materialcolor",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerObjectMaterial'"
+			],
+			[
+				"paramTypes",
+				"'iiiissi'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"objectid",
+				"number"
+			],
+			[
+				"materialindex",
+				"number"
+			],
+			[
+				"modelid",
+				"number"
+			],
+			[
+				"txdname",
+				"string"
+			],
+			[
+				"texturename",
+				"string"
+			],
+			[
+				"materialcolor",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetObjectMaterialText'"
+			],
+			[
+				"paramTypes",
+				"'isiisiiiii'"
+			],
+			[
+				"objectid",
+				"number"
+			],
+			[
+				"text",
+				"string"
+			],
+			[
+				"materialindex",
+				"number"
+			],
+			[
+				"materialsize",
+				"number"
+			],
+			[
+				"fontface",
+				"string"
+			],
+			[
+				"fontsize",
+				"number"
+			],
+			[
+				"bold",
+				"number"
+			],
+			[
+				"fontcolor",
+				"number"
+			],
+			[
+				"backcolor",
+				"number"
+			],
+			[
+				"textalignment",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerObjectMaterialText'"
+			],
+			[
+				"paramTypes",
+				"'iisiisiiiii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"objectid",
+				"number"
+			],
+			[
+				"text",
+				"string"
+			],
+			[
+				"materialindex",
+				"number"
+			],
+			[
+				"materialsize",
+				"number"
+			],
+			[
+				"fontface",
+				"string"
+			],
+			[
+				"fontsize",
+				"number"
+			],
+			[
+				"bold",
+				"number"
+			],
+			[
+				"fontcolor",
+				"number"
+			],
+			[
+				"backcolor",
+				"number"
+			],
+			[
+				"textalignment",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetObjectsDefaultCameraCol'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"disable",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetSpawnInfo'"
+			],
+			[
+				"paramTypes",
+				"'iiiffffiiiiii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"team",
+				"number"
+			],
+			[
+				"skin",
+				"number"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			],
+			[
+				"z",
+				"number"
+			],
+			[
+				"rotation",
+				"number"
+			],
+			[
+				"weapon1",
+				"number"
+			],
+			[
+				"weapon1_ammo",
+				"number"
+			],
+			[
+				"weapon2",
+				"number"
+			],
+			[
+				"weapon2_ammo",
+				"number"
+			],
+			[
+				"weapon3",
+				"number"
+			],
+			[
+				"weapon3_ammo",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SpawnPlayer'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerPos'"
+			],
+			[
+				"paramTypes",
+				"'ifff'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			],
+			[
+				"z",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerPosFindZ'"
+			],
+			[
+				"paramTypes",
+				"'ifff'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			],
+			[
+				"z",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerPos'"
+			],
+			[
+				"paramTypes",
+				"'iFFF'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerFacingAngle'"
+			],
+			[
+				"paramTypes",
+				"'if'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"ang",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerFacingAngle'"
+			],
+			[
+				"paramTypes",
+				"'iF'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsPlayerInRangeOfPoint'"
+			],
+			[
+				"paramTypes",
+				"'iffff'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"range",
+				"number"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			],
+			[
+				"z",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNativeFloat",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerDistanceFromPoint'"
+			],
+			[
+				"paramTypes",
+				"'ifff'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"X",
+				"number"
+			],
+			[
+				"Y",
+				"number"
+			],
+			[
+				"Z",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsPlayerStreamedIn'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"forplayerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerInterior'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"interiorid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerInterior'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerHealth'"
+			],
+			[
+				"paramTypes",
+				"'if'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"health",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerHealth'"
+			],
+			[
+				"paramTypes",
+				"'iF'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerArmour'"
+			],
+			[
+				"paramTypes",
+				"'if'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"armour",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerArmour'"
+			],
+			[
+				"paramTypes",
+				"'iF'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerAmmo'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"weaponslot",
+				"number"
+			],
+			[
+				"ammo",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerAmmo'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerWeaponState'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerTargetPlayer'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerTargetActor'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerTeam'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"teamid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerTeam'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerScore'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"score",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerScore'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerDrunkLevel'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerDrunkLevel'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"level",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerColor'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"color",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerColor'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerSkin'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"skinid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerSkin'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GivePlayerWeapon'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"weaponid",
+				"number"
+			],
+			[
+				"ammo",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'ResetPlayerWeapons'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerArmedWeapon'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"weaponid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerWeaponData'"
+			],
+			[
+				"paramTypes",
+				"'iiII'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"slot",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GivePlayerMoney'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"money",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'ResetPlayerMoney'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerName'"
+			],
+			[
+				"paramTypes",
+				"'is'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"name",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerMoney'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerState'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerIp'"
+			],
+			[
+				"paramTypes",
+				"'iSi'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"len",
+				"number"
+			]
+		],
+		"returnType": "string"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerPing'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerWeapon'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerKeys'"
+			],
+			[
+				"paramTypes",
+				"'iIII'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerName'"
+			],
+			[
+				"paramTypes",
+				"'iSi'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"len",
+				"number"
+			]
+		],
+		"returnType": "string"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerTime'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"hour",
+				"number"
+			],
+			[
+				"minute",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerTime'"
+			],
+			[
+				"paramTypes",
+				"'iII'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TogglePlayerClock'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"toggle",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerWeather'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"weather",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'ForceClassSelection'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerWantedLevel'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"level",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerWantedLevel'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerFightingStyle'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"style",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerFightingStyle'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerVelocity'"
+			],
+			[
+				"paramTypes",
+				"'ifff'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"X",
+				"number"
+			],
+			[
+				"Y",
+				"number"
+			],
+			[
+				"Z",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerVelocity'"
+			],
+			[
+				"paramTypes",
+				"'iFFF'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayCrimeReportForPlayer'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"suspectid",
+				"number"
+			],
+			[
+				"crime",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayAudioStreamForPlayer'"
+			],
+			[
+				"paramTypes",
+				"'isffffi'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"url",
+				"string"
+			],
+			[
+				"posX",
+				"number"
+			],
+			[
+				"posY",
+				"number"
+			],
+			[
+				"posZ",
+				"number"
+			],
+			[
+				"distance",
+				"number"
+			],
+			[
+				"usepos",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'StopAudioStreamForPlayer'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerShopName'"
+			],
+			[
+				"paramTypes",
+				"'is'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"shopname",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerSkillLevel'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"skill",
+				"number"
+			],
+			[
+				"level",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerSurfingVehicleID'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerSurfingObjectID'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'RemoveBuildingForPlayer'"
+			],
+			[
+				"paramTypes",
+				"'iiffff'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"modelid",
+				"number"
+			],
+			[
+				"fX",
+				"number"
+			],
+			[
+				"fY",
+				"number"
+			],
+			[
+				"fZ",
+				"number"
+			],
+			[
+				"fRadius",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerLastShotVectors'"
+			],
+			[
+				"paramTypes",
+				"'iFFFFFF'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerAttachedObject'"
+			],
+			[
+				"paramTypes",
+				"'iiiifffffffffii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"index",
+				"number"
+			],
+			[
+				"modelid",
+				"number"
+			],
+			[
+				"bone",
+				"number"
+			],
+			[
+				"fOffsetX",
+				"number"
+			],
+			[
+				"fOffsetY",
+				"number"
+			],
+			[
+				"fOffsetZ",
+				"number"
+			],
+			[
+				"fRotX",
+				"number"
+			],
+			[
+				"fRotY",
+				"number"
+			],
+			[
+				"fRotZ",
+				"number"
+			],
+			[
+				"fScaleX",
+				"number"
+			],
+			[
+				"fScaleY",
+				"number"
+			],
+			[
+				"fScaleZ",
+				"number"
+			],
+			[
+				"materialcolor1",
+				"number"
+			],
+			[
+				"materialcolor2",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'RemovePlayerAttachedObject'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"index",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsPlayerAttachedObjectSlotUsed'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"index",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'EditAttachedObject'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"index",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'CreatePlayerTextDraw'"
+			],
+			[
+				"paramTypes",
+				"'iffs'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			],
+			[
+				"text",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerTextDrawDestroy'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerTextDrawLetterSize'"
+			],
+			[
+				"paramTypes",
+				"'iiff'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerTextDrawTextSize'"
+			],
+			[
+				"paramTypes",
+				"'iiff'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerTextDrawAlignment'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"alignment",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerTextDrawColor'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"color",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerTextDrawUseBox'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"use",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerTextDrawBoxColor'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"color",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerTextDrawSetShadow'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"size",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerTextDrawSetOutline'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"size",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerTextDrawBackgroundColor'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"color",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerTextDrawFont'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"font",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerTextDrawSetProportional'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"set",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerTextDrawSetSelectable'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"set",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerTextDrawShow'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerTextDrawHide'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerTextDrawSetString'"
+			],
+			[
+				"paramTypes",
+				"'iis'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"string",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerTextDrawSetPreviewModel'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"modelindex",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerTextDrawSetPreviewRot'"
+			],
+			[
+				"paramTypes",
+				"'iiffff'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"fRotX",
+				"number"
+			],
+			[
+				"fRotY",
+				"number"
+			],
+			[
+				"fRotZ",
+				"number"
+			],
+			[
+				"fZoom",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerTextDrawSetPreviewVehCol'"
+			],
+			[
+				"paramTypes",
+				"'iiii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"number"
+			],
+			[
+				"color1",
+				"number"
+			],
+			[
+				"color2",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPVarInt'"
+			],
+			[
+				"paramTypes",
+				"'isi'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"varname",
+				"string"
+			],
+			[
+				"int_value",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPVarInt'"
+			],
+			[
+				"paramTypes",
+				"'is'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"varname",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPVarString'"
+			],
+			[
+				"paramTypes",
+				"'iss'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"varname",
+				"string"
+			],
+			[
+				"string_value",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPVarString'"
+			],
+			[
+				"paramTypes",
+				"'isSi'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"varname",
+				"string"
+			],
+			[
+				"len",
+				"number"
+			]
+		],
+		"returnType": "string"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPVarFloat'"
+			],
+			[
+				"paramTypes",
+				"'isf'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"varname",
+				"string"
+			],
+			[
+				"float_value",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNativeFloat",
+		"params": [
+			[
+				"nativeName",
+				"'GetPVarFloat'"
+			],
+			[
+				"paramTypes",
+				"'is'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"varname",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'DeletePVar'"
+			],
+			[
+				"paramTypes",
+				"'is'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"varname",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPVarsUpperIndex'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPVarNameAtIndex'"
+			],
+			[
+				"paramTypes",
+				"'iiSi'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"index",
+				"number"
+			],
+			[
+				"ret_len",
+				"number"
+			]
+		],
+		"returnType": "string"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPVarType'"
+			],
+			[
+				"paramTypes",
+				"'is'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"varname",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerChatBubble'"
+			],
+			[
+				"paramTypes",
+				"'isifi'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"text",
+				"string"
+			],
+			[
+				"color",
+				"number"
+			],
+			[
+				"drawdistance",
+				"number"
+			],
+			[
+				"expiretime",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PutPlayerInVehicle'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"seatid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerVehicleID'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerVehicleSeat'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'RemovePlayerFromVehicle'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TogglePlayerControllable'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"toggle",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerPlaySound'"
+			],
+			[
+				"paramTypes",
+				"'iifff'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"soundid",
+				"number"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			],
+			[
+				"z",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'ApplyAnimation'"
+			],
+			[
+				"paramTypes",
+				"'issfiiiiii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"animlib",
+				"string"
+			],
+			[
+				"animname",
+				"string"
+			],
+			[
+				"fDelta",
+				"number"
+			],
+			[
+				"loop",
+				"number"
+			],
+			[
+				"lockx",
+				"number"
+			],
+			[
+				"locky",
+				"number"
+			],
+			[
+				"freeze",
+				"number"
+			],
+			[
+				"time",
+				"number"
+			],
+			[
+				"forcesync",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'ClearAnimations'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"forcesync",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerAnimationIndex'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetAnimationName'"
+			],
+			[
+				"paramTypes",
+				"'iSiSi'"
+			],
+			[
+				"index",
+				"number"
+			],
+			[
+				"len1",
+				"number"
+			],
+			[
+				"len2",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerSpecialAction'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerSpecialAction'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"actionid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'DisableRemoteVehicleCollisions'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"disable",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerCheckpoint'"
+			],
+			[
+				"paramTypes",
+				"'iffff'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			],
+			[
+				"z",
+				"number"
+			],
+			[
+				"size",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'DisablePlayerCheckpoint'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerRaceCheckpoint'"
+			],
+			[
+				"paramTypes",
+				"'iifffffff'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"type",
+				"number"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			],
+			[
+				"z",
+				"number"
+			],
+			[
+				"nextx",
+				"number"
+			],
+			[
+				"nexty",
+				"number"
+			],
+			[
+				"nextz",
+				"number"
+			],
+			[
+				"size",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'DisablePlayerRaceCheckpoint'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerWorldBounds'"
+			],
+			[
+				"paramTypes",
+				"'iffff'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"x_max",
+				"number"
+			],
+			[
+				"x_min",
+				"number"
+			],
+			[
+				"y_max",
+				"number"
+			],
+			[
+				"y_min",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerMarkerForPlayer'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"showplayerid",
+				"number"
+			],
+			[
+				"color",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'ShowPlayerNameTagForPlayer'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"showplayerid",
+				"number"
+			],
+			[
+				"show",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerMapIcon'"
+			],
+			[
+				"paramTypes",
+				"'iifffiii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"iconid",
+				"number"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			],
+			[
+				"z",
+				"number"
+			],
+			[
+				"markertype",
+				"number"
+			],
+			[
+				"color",
+				"number"
+			],
+			[
+				"style",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'RemovePlayerMapIcon'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"iconid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'AllowPlayerTeleport'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"allow",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerCameraPos'"
+			],
+			[
+				"paramTypes",
+				"'ifff'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			],
+			[
+				"z",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerCameraLookAt'"
+			],
+			[
+				"paramTypes",
+				"'ifffi'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			],
+			[
+				"z",
+				"number"
+			],
+			[
+				"cut",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetCameraBehindPlayer'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerCameraPos'"
+			],
+			[
+				"paramTypes",
+				"'iFFF'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerCameraFrontVector'"
+			],
+			[
+				"paramTypes",
+				"'iFFF'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerCameraMode'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'EnablePlayerCameraTarget'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"enable",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerCameraTargetObject'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerCameraTargetVehicle'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerCameraTargetPlayer'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerCameraTargetActor'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNativeFloat",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerCameraAspectRatio'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNativeFloat",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerCameraZoom'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'AttachCameraToObject'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"objectid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'AttachCameraToPlayerObject'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"playerobjectid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'InterpolateCameraPos'"
+			],
+			[
+				"paramTypes",
+				"'iffffffii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"FromX",
+				"number"
+			],
+			[
+				"FromY",
+				"number"
+			],
+			[
+				"FromZ",
+				"number"
+			],
+			[
+				"ToX",
+				"number"
+			],
+			[
+				"ToY",
+				"number"
+			],
+			[
+				"ToZ",
+				"number"
+			],
+			[
+				"time",
+				"number"
+			],
+			[
+				"cut",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'InterpolateCameraLookAt'"
+			],
+			[
+				"paramTypes",
+				"'iffffffii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"FromX",
+				"number"
+			],
+			[
+				"FromY",
+				"number"
+			],
+			[
+				"FromZ",
+				"number"
+			],
+			[
+				"ToX",
+				"number"
+			],
+			[
+				"ToY",
+				"number"
+			],
+			[
+				"ToZ",
+				"number"
+			],
+			[
+				"time",
+				"number"
+			],
+			[
+				"cut",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsPlayerConnected'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsPlayerInVehicle'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsPlayerInAnyVehicle'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsPlayerInCheckpoint'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsPlayerInRaceCheckpoint'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetPlayerVirtualWorld'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"worldid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetPlayerVirtualWorld'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'EnableStuntBonusForPlayer'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"enable",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'EnableStuntBonusForAll'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"enable",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'TogglePlayerSpectating'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"toggle",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerSpectatePlayer'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"targetplayerid",
+				"number"
+			],
+			[
+				"mode",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'PlayerSpectateVehicle'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"targetvehicleid",
+				"number"
+			],
+			[
+				"mode",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'StartRecordingPlayerData'"
+			],
+			[
+				"paramTypes",
+				"'iis'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"recordtype",
+				"number"
+			],
+			[
+				"recordname",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'StopRecordingPlayerData'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SelectTextDraw'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"hovercolor",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'CancelSelectTextDraw'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"playerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'CreateExplosionForPlayer'"
+			],
+			[
+				"paramTypes",
+				"'ifffif'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"X",
+				"number"
+			],
+			[
+				"Y",
+				"number"
+			],
+			[
+				"Z",
+				"number"
+			],
+			[
+				"type",
+				"number"
+			],
+			[
+				"Radius",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SendClientCheck'"
+			],
+			[
+				"paramTypes",
+				"'iiiii'"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"type",
+				"number"
+			],
+			[
+				"memAddr",
+				"number"
+			],
+			[
+				"memOffset",
+				"number"
+			],
+			[
+				"byteCount",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'db_open'"
+			],
+			[
+				"paramTypes",
+				"'s'"
+			],
+			[
+				"name",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'db_close'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"db",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'db_query'"
+			],
+			[
+				"paramTypes",
+				"'is'"
+			],
+			[
+				"db",
+				"number"
+			],
+			[
+				"query",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'db_free_result'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"dbresult",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'db_num_rows'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"dbresult",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'db_next_row'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"dbresult",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'db_num_fields'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"dbresult",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'db_field_name'"
+			],
+			[
+				"paramTypes",
+				"'iiSi'"
+			],
+			[
+				"dbresult",
+				"number"
+			],
+			[
+				"field",
+				"number"
+			],
+			[
+				"maxlength",
+				"number"
+			]
+		],
+		"returnType": "string"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'db_get_field'"
+			],
+			[
+				"paramTypes",
+				"'iiSi'"
+			],
+			[
+				"dbresult",
+				"number"
+			],
+			[
+				"field",
+				"number"
+			],
+			[
+				"maxlength",
+				"number"
+			]
+		],
+		"returnType": "string"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'db_get_field_int'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"result",
+				"number"
+			],
+			[
+				"field",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNativeFloat",
+		"params": [
+			[
+				"nativeName",
+				"'db_get_field_float'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"result",
+				"number"
+			],
+			[
+				"field",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'db_get_field_assoc'"
+			],
+			[
+				"paramTypes",
+				"'isSi'"
+			],
+			[
+				"dbresult",
+				"number"
+			],
+			[
+				"field",
+				"string"
+			],
+			[
+				"maxlength",
+				"number"
+			]
+		],
+		"returnType": "string"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'db_get_field_assoc_int'"
+			],
+			[
+				"paramTypes",
+				"'is'"
+			],
+			[
+				"result",
+				"number"
+			],
+			[
+				"field",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNativeFloat",
+		"params": [
+			[
+				"nativeName",
+				"'db_get_field_assoc_float'"
+			],
+			[
+				"paramTypes",
+				"'is'"
+			],
+			[
+				"result",
+				"number"
+			],
+			[
+				"field",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'db_get_mem_handle'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"db",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'db_get_result_mem_handle'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"result",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'db_debug_openfiles'"
+			],
+			[
+				"paramTypes",
+				"''"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'db_debug_openresults'"
+			],
+			[
+				"paramTypes",
+				"''"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'CreateVehicle'"
+			],
+			[
+				"paramTypes",
+				"'iffffiiii'"
+			],
+			[
+				"vehicletype",
+				"number"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			],
+			[
+				"z",
+				"number"
+			],
+			[
+				"rotation",
+				"number"
+			],
+			[
+				"color1",
+				"number"
+			],
+			[
+				"color2",
+				"number"
+			],
+			[
+				"respawn_delay",
+				"number"
+			],
+			[
+				"addsiren",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'DestroyVehicle'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsVehicleStreamedIn'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"forplayerid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetVehiclePos'"
+			],
+			[
+				"paramTypes",
+				"'iFFF'"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetVehiclePos'"
+			],
+			[
+				"paramTypes",
+				"'ifff'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"x",
+				"number"
+			],
+			[
+				"y",
+				"number"
+			],
+			[
+				"z",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetVehicleZAngle'"
+			],
+			[
+				"paramTypes",
+				"'iF'"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetVehicleRotationQuat'"
+			],
+			[
+				"paramTypes",
+				"'iFFFF'"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNativeFloat",
+		"params": [
+			[
+				"nativeName",
+				"'GetVehicleDistanceFromPoint'"
+			],
+			[
+				"paramTypes",
+				"'ifff'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"X",
+				"number"
+			],
+			[
+				"Y",
+				"number"
+			],
+			[
+				"Z",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetVehicleZAngle'"
+			],
+			[
+				"paramTypes",
+				"'if'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"z_angle",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetVehicleParamsForPlayer'"
+			],
+			[
+				"paramTypes",
+				"'iiii'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"playerid",
+				"number"
+			],
+			[
+				"objective",
+				"number"
+			],
+			[
+				"doorslocked",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'ManualVehicleEngineAndLights'"
+			],
+			[
+				"paramTypes",
+				"''"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetVehicleParamsEx'"
+			],
+			[
+				"paramTypes",
+				"'iiiiiiii'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"engine",
+				"number"
+			],
+			[
+				"lights",
+				"number"
+			],
+			[
+				"alarm",
+				"number"
+			],
+			[
+				"doors",
+				"number"
+			],
+			[
+				"bonnet",
+				"number"
+			],
+			[
+				"boot",
+				"number"
+			],
+			[
+				"objective",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetVehicleParamsEx'"
+			],
+			[
+				"paramTypes",
+				"'iIIIIIII'"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetVehicleParamsSirenState'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetVehicleParamsCarDoors'"
+			],
+			[
+				"paramTypes",
+				"'iiiii'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"driver",
+				"number"
+			],
+			[
+				"passenger",
+				"number"
+			],
+			[
+				"backleft",
+				"number"
+			],
+			[
+				"backright",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetVehicleParamsCarDoors'"
+			],
+			[
+				"paramTypes",
+				"'iIIII'"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetVehicleParamsCarWindows'"
+			],
+			[
+				"paramTypes",
+				"'iiiii'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"driver",
+				"number"
+			],
+			[
+				"passenger",
+				"number"
+			],
+			[
+				"backleft",
+				"number"
+			],
+			[
+				"backright",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetVehicleParamsCarWindows'"
+			],
+			[
+				"paramTypes",
+				"'iIIII'"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetVehicleToRespawn'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'LinkVehicleToInterior'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"interiorid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'AddVehicleComponent'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"componentid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'RemoveVehicleComponent'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"componentid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'ChangeVehicleColor'"
+			],
+			[
+				"paramTypes",
+				"'iii'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"color1",
+				"number"
+			],
+			[
+				"color2",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'ChangeVehiclePaintjob'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"paintjobid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetVehicleHealth'"
+			],
+			[
+				"paramTypes",
+				"'if'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"health",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetVehicleHealth'"
+			],
+			[
+				"paramTypes",
+				"'iF'"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'AttachTrailerToVehicle'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"trailerid",
+				"number"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'DetachTrailerFromVehicle'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsTrailerAttachedToVehicle'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetVehicleTrailer'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetVehicleNumberPlate'"
+			],
+			[
+				"paramTypes",
+				"'is'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"numberplate",
+				"string"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetVehicleModel'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetVehicleComponentInSlot'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"slot",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetVehicleComponentType'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"component",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'RepairVehicle'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetVehicleVelocity'"
+			],
+			[
+				"paramTypes",
+				"'iFFF'"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetVehicleVelocity'"
+			],
+			[
+				"paramTypes",
+				"'ifff'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"X",
+				"number"
+			],
+			[
+				"Y",
+				"number"
+			],
+			[
+				"Z",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetVehicleAngularVelocity'"
+			],
+			[
+				"paramTypes",
+				"'ifff'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"X",
+				"number"
+			],
+			[
+				"Y",
+				"number"
+			],
+			[
+				"Z",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetVehicleDamageStatus'"
+			],
+			[
+				"paramTypes",
+				"'iIIII'"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'UpdateVehicleDamageStatus'"
+			],
+			[
+				"paramTypes",
+				"'iiiii'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"panels",
+				"number"
+			],
+			[
+				"doors",
+				"number"
+			],
+			[
+				"lights",
+				"number"
+			],
+			[
+				"tires",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetVehicleModelInfo'"
+			],
+			[
+				"paramTypes",
+				"'iiFFF'"
+			],
+			[
+				"vehiclemodel",
+				"number"
+			],
+			[
+				"infotype",
+				"number"
+			]
+		],
+		"returnType": "Array<any>"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'SetVehicleVirtualWorld'"
+			],
+			[
+				"paramTypes",
+				"'ii'"
+			],
+			[
+				"vehicleid",
+				"number"
+			],
+			[
+				"worldid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'GetVehicleVirtualWorld'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"'IsValidVehicle'"
+			],
+			[
+				"paramTypes",
+				"'i'"
+			],
+			[
+				"vehicleid",
+				"number"
+			]
+		],
+		"returnType": "number"
+	},
+	{
+		"tag": "callNative",
+		"params": [
+			[
+				"nativeName",
+				"string"
+			],
+			[
+				"paramTypes",
+				"string"
+			],
+			[
+				"...args",
+				"Array<any>"
+			]
+		],
+		"returnType": "any"
+	},
+	{
+		"tag": "callNativeFloat",
+		"params": [
+			[
+				"nativeName",
+				"string"
+			],
+			[
+				"paramTypes",
+				"string"
+			],
+			[
+				"...args",
+				"Array<any>"
+			]
+		],
+		"returnType": "any"
+	}
+]
