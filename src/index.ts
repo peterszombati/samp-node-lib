@@ -206,4 +206,16 @@ import {rgba} from "./rgba";
 import {SampPlayer} from "./SampPlayer";
 import {SampNode} from "./SampNode";
 
+export const on = SampNode.on;
+export const addListener = SampNode.addListener;
+export const addEventListener = SampNode.addEventListener;
+export const removeListener = SampNode.removeListener;
+export const removeEventListener = SampNode.removeEventListener;
+export const registerEvent = SampNode.registerEvent;
+export const fire = SampNode.fire;
+export const callPublic = SampNode.callPublic;
+export const callPublicFloat = SampNode.callPublicFloat;
+export const logprint = SampNode.logprint;
+export const callNative = SampNode.callNativeFloat;
+
 export {TextDraw,TextDraws,vehicleNames, GetVehicleName, GetVehicleModelId,DynamicObject,getAllVehicle,getPlayers,rgba,SampPlayer,SampNode};
