@@ -18,7 +18,7 @@ export class SampNode {
         return samp.registerEvent(eventName, paramTypes);
     }
     static fire(eventName: string, ...args: Array<any>): void {
-        return samp.fire(eventName, ...args);
+        samp.fire(eventName, ...args);
     }
     static callPublic(publicName: string, paramTypes: string, ...args: Array<any>): any {
         return samp.callPublic(publicName, paramTypes, ...args);
