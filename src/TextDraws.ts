@@ -1,13 +1,12 @@
 import {TextDraw} from "./TextDraw";
-import {OnPlayerClickPlayerTextDraw, OnPlayerDisconnect} from "./SampEvents";
 
-OnPlayerClickPlayerTextDraw(((playerid, playertextid) => {
-    TextDraws.onclick(playerid.playerid, playertextid);
-}));
+samp.on('OnPlayerClickPlayerTextDraw', (playerid, playertextid) => {
+    TextDraws.onclick(playerid, playertextid);
+});
 
-OnPlayerDisconnect(((playerid) => {
-    TextDraws.destroyAll(playerid.playerid);
-}));
+samp.on('OnPlayerDisconnect', (playerid) => {
+    TextDraws.destroyAll(playerid);
+});
 
 export class TextDraws {
     static tds: any = {};
