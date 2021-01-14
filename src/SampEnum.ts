@@ -220,3 +220,8 @@ export enum BODY_PARTS {
     RIGHT_LEG,
     HEAD
 }
+
+export enum CAMERA_STYLE {
+    MOVE = 1,
+    CUT = 2
+}
