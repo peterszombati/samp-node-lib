@@ -216,6 +216,7 @@ export const fire = SampNode.fire;
 export const callPublic = SampNode.callPublic;
 export const callPublicFloat = SampNode.callPublicFloat;
 export const logprint = SampNode.logprint;
-export const callNative = SampNode.callNativeFloat;
+export const callNative = SampNode.callNative;
+export const callNativeFloat = SampNode.callNativeFloat;
 
 export {TextDraw,TextDraws,vehicleNames, GetVehicleName, GetVehicleModelId,DynamicObject,getAllVehicle,getPlayers,rgba,SampPlayer,SampNode};
