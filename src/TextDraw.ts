@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
  */
 import {TEXTDRAW_ALIGN} from "./SampEnum";
-import {SampFunctions} from "./SampFunctions";
+import * as SampFunctions from "./SampFunctions";
 import {TextDraws} from "./TextDraws";
 
 export interface TextDrawConfig {
