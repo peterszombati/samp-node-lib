@@ -9,7 +9,7 @@
     "outDir": "build",
     "declaration": true,
     "strictNullChecks": true,
-    "types": ["@sa-mp/node","@types/node"]
+    "types": ["./@types/sa-mp","@types/node"]
   },
   "include": [
     "src/**/*"

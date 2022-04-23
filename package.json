@@ -6,7 +6,6 @@
   "types": "build/index.d.ts",
   "dependencies": {},
   "devDependencies": {
-    "@sa-mp/node": "^0.2.0",
     "@types/node": "^11.15.3",
     "typescript": "^3.4.5"
   },
