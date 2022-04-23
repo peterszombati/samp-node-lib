@@ -1,15 +1,18 @@
 export * from "./SampFunctions";
 export * from "./SampEnum";
 export * from './SampEvents';
-
 export * from './SampNode';
-export * as SampNode from './SampNode';
 
-export {TextDraw} from "./TextDraw";
-export {TextDraws} from "./TextDraws";
-export {vehicleNames, GetVehicleName, GetVehicleModelId} from "./VehicleNames";
-export {DynamicObject} from "./DynamicObject";
+export * from "./TextDraw";
+export * from "./TextDraws";
+export * from "./VehicleNames";
+export * from "./DynamicObject";
+export * from "./SampPlayer";
 export {getAllVehicle} from "./getAllVehicle";
 export {getPlayers} from "./getPlayers";
 export {rgba} from "./rgba";
-export {SampPlayer} from "./SampPlayer";
+
+// legacy exports
+export * as SampFunctions from './SampFunctions';
+export * as SampEvents from './SampEvents';
+export * as SampNode from './SampNode';
