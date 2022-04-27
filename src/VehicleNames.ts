@@ -238,35 +238,60 @@ export const vehicleNames = [
     "Utility Trailer"
 ];
 
+const simplified_vehicleNames = vehicleNames.map(name => name.toLowerCase().replace(/([^a-z])/g,''))
+
 export function GetVehicleName(vehicleid: number) {
     return vehicleNames[GetVehicleModel(vehicleid) - 400];
 }
 
 export function GetVehicleModelId(vehicleName: string): number | null {
-    vehicleName = vehicleName.toLowerCase().trim().split(' ').join('').split('.').join('').split('-').join('').split("'").join('');
-    const potential = vehicleNames.map((name, i) => ({
-        name: name.toLowerCase().split(' ').join('').split('.').join('').split('-').join('').split("'").join(''),
-        modelid: i + 400
-    })).filter(({name}) => name.indexOf(vehicleName) >= 0);
+    vehicleName = vehicleName.toLowerCase().replace(/([^a-z])/g,'')
+    const potential = simplified_vehicleNames.map((name, i) => ({
+        name,
+        i,
+    })).filter(({name}) => name.indexOf(vehicleName) >= 0)
+
     if (potential.length === 0) {
-        return null;
+        return null
     }
     if (potential.length === 1) {
-        return potential[0].modelid;
+        return potential[0].i + 400
     }
-    const ranked = potential.map(({name, modelid}, i) => {
-        let rank = 0;
-        if (name === vehicleName) {
-            rank = 100000 - i;
-        } else if (name.indexOf(vehicleName) === 0) {
-            rank = 10000 - (name.length - vehicleName.length);
-        } else {
-            rank = 100 - (name.length - vehicleName.length);
+
+    let rank = 0
+    if (potential[0].name === vehicleName) {
+        return potential[0].i + 400
+    } else if (potential[0].name.indexOf(vehicleName) === 0) {
+        rank = 10000 + (potential[0].name.length - vehicleName.length)
+    } else {
+        rank = 100 + (potential[0].name.length - vehicleName.length)
+    }
+
+    let result = {
+        i: potential[0].i,
+        rank,
+    }
+
+    for (let i = 1; i < potential.length; i++) {
+        if (potential[i].name === vehicleName) {
+            return potential[0].i + 400
+        } else if (potential[i].name.indexOf(vehicleName) === 0) {
+            const rank = 10000 + (potential[i].name.length - vehicleName.length)
+            if (rank > result.rank) {
+                result = {
+                    i: potential[i].i,
+                    rank,
+                }
+            }
         }
-        return {
-            modelid,
-            rank
+
+        const rank = 100 + (potential[i].name.length - vehicleName.length)
+        if (rank > result.rank) {
+            result = {
+                i: potential[i].i,
+                rank,
+            }
         }
-    }).sort((a, b) => b.rank - a.rank);
-    return ranked[0].modelid;
+    }
+    return result.i + 400;
 }
