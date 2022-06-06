@@ -4,7 +4,7 @@ import {TextDraw, TextDrawConfig} from "./TextDraw";
 import {TextDraws} from "./TextDraws";
 
 export class SampPlayer extends SampPlayerNativeFunctions {
-    state: any = {};
+    state: Record<string, any> = {};
 
     constructor(playerid: number) {
         super(playerid);
@@ -42,7 +42,7 @@ export class SampPlayer extends SampPlayerNativeFunctions {
         }
     }
 
-    setState(newState: any) {
+    setState(newState: Record<string, any>) {
         this.state = {...this.state, ...newState};
     }
 
