@@ -24,6 +24,8 @@ SOFTWARE.
 import {SampPlayer} from "./SampPlayer";
 import {KEY, BODY_PARTS} from "./SampEnum";
 import {SampPlayers} from "./SampPlayers";
+import {SampVehicles} from "./SampVehicles";
+import {SampVehicle} from "./SampVehicle";
 
 export const OnGameModeInit = (func: () => void)  => {
     samp.on('OnGameModeInit', func);
@@ -57,12 +59,12 @@ export const OnPlayerDeath = (func: (player: SampPlayer, killerid: SampPlayer, r
     samp.on('OnPlayerDeath', ((playerid, killerid, reason) => func(SampPlayers.getClass(playerid), SampPlayers.getClass(killerid), reason)));
 }
 
-export const OnVehicleSpawn = (func: (vehicleid: number) => void)  => {
-    samp.on('OnVehicleSpawn', func);
+export const OnVehicleSpawn = (func: (vehicle: SampVehicle) => void)  => {
+    samp.on('OnVehicleSpawn', (vehicleid) => func(SampVehicles.getNewClass(vehicleid)));
 }
 
-export const OnVehicleDeath = (func: (vehicleid: number, killerid: SampPlayer) => void)  => {
-    samp.on('OnVehicleDeath', ((vehicleid, playerid) => func(vehicleid, SampPlayers.getClass(playerid))));
+export const OnVehicleDeath = (func: (vehicle: SampVehicle, killer: SampPlayer) => void)  => {
+    samp.on('OnVehicleDeath', ((vehicleid, playerid) => func(SampVehicles.removeClass(vehicleid), SampPlayers.getClass(playerid))));
 }
 
 export const OnPlayerText = (func: (player: SampPlayer, text: string) => void)  => {
@@ -77,12 +79,12 @@ export const OnPlayerRequestClass = (func: (player: SampPlayer, classid: number)
     samp.on('OnPlayerRequestClass', ((playerid, classid) => func(SampPlayers.getClass(playerid), classid)));
 }
 
-export const OnPlayerEnterVehicle = (func: (player: SampPlayer, vehicleid: number, ispassenger: number) => void)  => {
-    samp.on('OnPlayerEnterVehicle', ((playerid, vehicleid, ispassenger) => func(SampPlayers.getClass(playerid), vehicleid, ispassenger)));
+export const OnPlayerEnterVehicle = (func: (player: SampPlayer, vehicle: SampVehicle, ispassenger: number) => void)  => {
+    samp.on('OnPlayerEnterVehicle', ((playerid, vehicleid, ispassenger) => func(SampPlayers.getClass(playerid), SampVehicles.getClass(vehicleid), ispassenger)));
 }
 
-export const OnPlayerExitVehicle = (func: (player: SampPlayer, vehicleid: number) => void)  => {
-    samp.on('OnPlayerExitVehicle', ((playerid, vehicleid) => func(SampPlayers.getClass(playerid), vehicleid)));
+export const OnPlayerExitVehicle = (func: (player: SampPlayer, vehicle: SampVehicle) => void)  => {
+    samp.on('OnPlayerExitVehicle', ((playerid, vehicleid) => func(SampPlayers.getClass(playerid), SampVehicles.getClass(vehicleid))));
 }
 
 export const OnPlayerStateChange = (func: (player: SampPlayer, newstate: number, oldstate: number) => void)  => {
@@ -125,28 +127,28 @@ export const OnPlayerPickUpPickup = (func: (player: SampPlayer, pickupid: number
     samp.on('OnPlayerPickUpPickup', ((playerid, pickupid) => func(SampPlayers.getClass(playerid), pickupid)));
 }
 
-export const OnVehicleMod = (func: (player: SampPlayer, vehicleid: number, componentid: number) => void)  => {
-    samp.on('OnVehicleMod', ((playerid, vehicleid, componentid) => func(SampPlayers.getClass(playerid), vehicleid, componentid)));
+export const OnVehicleMod = (func: (player: SampPlayer, vehicle: SampVehicle, componentid: number) => void)  => {
+    samp.on('OnVehicleMod', ((playerid, vehicleid, componentid) => func(SampPlayers.getClass(playerid), SampVehicles.getClass(vehicleid), componentid)));
 }
 
 export const OnEnterExitModShop = (func: (player: SampPlayer, enterexit: number, interiorid: number) => void)  => {
     samp.on('OnEnterExitModShop', ((playerid, enterexit, interiorid) => func(SampPlayers.getClass(playerid), enterexit, interiorid)));
 }
 
-export const OnVehiclePaintjob = (func: (player: SampPlayer, vehicleid: number, paintjobid: number) => void)  => {
-    samp.on('OnVehiclePaintjob', ((playerid, vehicleid, paintjobid) => func(SampPlayers.getClass(playerid), vehicleid, paintjobid)));
+export const OnVehiclePaintjob = (func: (player: SampPlayer, vehicleid: SampVehicle, paintjobid: number) => void)  => {
+    samp.on('OnVehiclePaintjob', ((playerid, vehicleid, paintjobid) => func(SampPlayers.getClass(playerid), SampVehicles.getClass(vehicleid), paintjobid)));
 }
 
-export const OnVehicleRespray = (func: (player: SampPlayer, vehicleid: number, color1: number, color2: number) => void)  => {
-    samp.on('OnVehicleRespray', ((playerid, vehicleid, color1, color2) => func(SampPlayers.getClass(playerid), vehicleid, color1, color2)));
+export const OnVehicleRespray = (func: (player: SampPlayer, vehicle: SampVehicle, color1: number, color2: number) => void)  => {
+    samp.on('OnVehicleRespray', ((playerid, vehicleid, color1, color2) => func(SampPlayers.getClass(playerid), SampVehicles.getClass(vehicleid), color1, color2)));
 }
 
-export const OnVehicleDamageStatusUpdate = (func: (vehicleid: number, player: SampPlayer) => void)  => {
-    samp.on('OnVehicleDamageStatusUpdate', ((vehicleid, playerid) => func(vehicleid, SampPlayers.getClass(playerid))));
+export const OnVehicleDamageStatusUpdate = (func: (vehicle: SampVehicle, player: SampPlayer) => void)  => {
+    samp.on('OnVehicleDamageStatusUpdate', ((vehicleid, playerid) => func(SampVehicles.getClass(vehicleid), SampPlayers.getClass(playerid))));
 }
 
-export const OnUnoccupiedVehicleUpdate = (func: (vehicleid: number, player: SampPlayer, passenger_seat: number, new_x: number, new_y: number, new_z: number, vel_x: number, vel_y: number, vel_z: number) => void)  => {
-    samp.on('OnUnoccupiedVehicleUpdate', ((vehicleid, playerid, passenger_seat, new_x, new_y, new_z, vel_x, vel_y, vel_z) => func(vehicleid, SampPlayers.getClass(playerid), passenger_seat, new_x, new_y, new_z, vel_x, vel_y, vel_z)));
+export const OnUnoccupiedVehicleUpdate = (func: (vehicle: SampVehicle, player: SampPlayer, passenger_seat: number, new_x: number, new_y: number, new_z: number, vel_x: number, vel_y: number, vel_z: number) => void)  => {
+    samp.on('OnUnoccupiedVehicleUpdate', ((vehicleid, playerid, passenger_seat, new_x, new_y, new_z, vel_x, vel_y, vel_z) => func(SampVehicles.getClass(vehicleid), SampPlayers.getClass(playerid), passenger_seat, new_x, new_y, new_z, vel_x, vel_y, vel_z)));
 }
 
 export const OnPlayerSelectedMenuRow = (func: (player: SampPlayer, row: number) => void)  => {
@@ -181,12 +183,12 @@ export const OnPlayerStreamOut = (func: (player: SampPlayer, forplayer: SampPlay
     samp.on('OnPlayerStreamOut', ((playerid, forplayerid) => func(SampPlayers.getClass(playerid), SampPlayers.getClass(forplayerid))));
 }
 
-export const OnVehicleStreamIn = (func: (vehicleid: number, forplayer: SampPlayer) => void)  => {
-    samp.on('OnVehicleStreamIn', ((vehicleid, forplayerid) => func(vehicleid, SampPlayers.getClass(forplayerid))));
+export const OnVehicleStreamIn = (func: (vehicle: SampVehicle, forplayer: SampPlayer) => void)  => {
+    samp.on('OnVehicleStreamIn', ((vehicleid, forplayerid) => func(SampVehicles.getClass(vehicleid), SampPlayers.getClass(forplayerid))));
 }
 
-export const OnVehicleStreamOut = (func: (vehicleid: number, forplayer: SampPlayer) => void)  => {
-    samp.on('OnVehicleStreamOut', ((vehicleid, forplayerid) => func(vehicleid, SampPlayers.getClass(forplayerid))));
+export const OnVehicleStreamOut = (func: (vehicle: SampVehicle, forplayer: SampPlayer) => void)  => {
+    samp.on('OnVehicleStreamOut', ((vehicleid, forplayerid) => func(SampVehicles.getClass(vehicleid), SampPlayers.getClass(forplayerid))));
 }
 
 export const OnActorStreamIn = (func: (actorid: number, forplayer: SampPlayer) => void)  => {
@@ -229,12 +231,12 @@ export const OnIncomingConnection = (func: (player: SampPlayer, ip_address: stri
     samp.on('OnIncomingConnection', ((playerid, ip_address, port) => func(SampPlayers.getClass(playerid), ip_address, port)));
 }
 
-export const OnTrailerUpdate = (func: (player: SampPlayer, vehicleid: number) => void)  => {
-    samp.on('OnTrailerUpdate', ((playerid, vehicleid) => func(SampPlayers.getClass(playerid), vehicleid)));
+export const OnTrailerUpdate = (func: (player: SampPlayer, vehicle: SampVehicle) => void)  => {
+    samp.on('OnTrailerUpdate', ((playerid, vehicleid) => func(SampPlayers.getClass(playerid), SampVehicles.getClass(vehicleid))));
 }
 
-export const OnVehicleSirenStateChange = (func: (player: SampPlayer, vehicleid: number, newstate: number) => void)  => {
-    samp.on('OnVehicleSirenStateChange', ((playerid, vehicleid, newstate) => func(SampPlayers.getClass(playerid), vehicleid, newstate)));
+export const OnVehicleSirenStateChange = (func: (player: SampPlayer, vehicle: SampVehicle, newstate: number) => void)  => {
+    samp.on('OnVehicleSirenStateChange', ((playerid, vehicleid, newstate) => func(SampPlayers.getClass(playerid), SampVehicles.getClass(vehicleid), newstate)));
 }
 
 export const OnPlayerFinishedDownloading = (func: (player: SampPlayer, virtualworld: number) => void)  => {
