@@ -135,7 +135,7 @@ export const OnEnterExitModShop = (func: (player: SampPlayer, enterexit: number,
     samp.on('OnEnterExitModShop', ((playerid, enterexit, interiorid) => func(SampPlayers.getClass(playerid), enterexit, interiorid)));
 }
 
-export const OnVehiclePaintjob = (func: (player: SampPlayer, vehicleid: SampVehicle, paintjobid: number) => void)  => {
+export const OnVehiclePaintjob = (func: (player: SampPlayer, vehicle: SampVehicle, paintjobid: number) => void)  => {
     samp.on('OnVehiclePaintjob', ((playerid, vehicleid, paintjobid) => func(SampPlayers.getClass(playerid), SampVehicles.getClass(vehicleid), paintjobid)));
 }
 
