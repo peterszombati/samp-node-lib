@@ -1,10 +1,12 @@
 import {SampPlayerNativeFunctions} from "./SampPlayerNativeFunctions";
-import {GetVehicleTrailer, GetVehicleVelocity, GetVehicleZAngle} from "./SampFunctions";
+import {GetVehicleTrailer, GetVehicleVelocity, GetVehicleZAngle, ShowPlayerDialog} from "./SampFunctions";
 import {TextDraw, TextDrawConfig} from "./TextDraw";
 import {TextDraws} from "./TextDraws";
+import {createPromise} from "./createPromise";
 
 export class SampPlayer extends SampPlayerNativeFunctions {
     state: Record<string, any> = {};
+    private dialog: Record<string, (result: {response: number, listitem: number, inputtext: string}) => void> = {};
 
     constructor(playerid: number) {
         super(playerid);
@@ -60,5 +62,16 @@ export class SampPlayer extends SampPlayerNativeFunctions {
 
     TextDrawDestory(name: string) {
         TextDraws.destroy(this.playerid, name);
+    }
+
+    ShowDialog(dialogid: number, style: number, caption: string, info: string, button1: string, button2: string): Promise<{response: number, listitem: number, inputtext: string}> {
+        const {resolve, promise} = createPromise<{response: number, listitem: number, inputtext: string}>()
+        this.dialog[`id${dialogid}`] = resolve
+        const result = ShowPlayerDialog(this.playerid, dialogid, style, caption, info, button1, button2)
+        if (result === 0) {
+            delete this.dialog[`id${dialogid}`]
+            throw new Error('player is not connected')
+        }
+        return promise
     }
 }

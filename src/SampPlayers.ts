@@ -1,5 +1,10 @@
 import {SampPlayer} from "./SampPlayer";
 
+samp.on('OnDialogResponse', ((playerid, dialogid, response, listitem, inputtext) => {
+    // @ts-ignore
+    SampPlayers.ids[`id${playerid}`] && SampPlayers.ids[`id${playerid}`].dialog[`id${dialogid}`] && SampPlayers.ids[`id${playerid}`].dialog[`id${dialogid}`]({response, listitem, inputtext})
+}))
+
 export class SampPlayers {
     static ids: Record<string, SampPlayer> = {};
 
