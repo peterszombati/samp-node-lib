@@ -1,7 +1,7 @@
 import {SampPlayer} from "./SampPlayer";
 
 export class SampPlayers {
-    static ids: any = {};
+    static ids: Record<string, SampPlayer> = {};
 
     static getNewClass(playerid: number): SampPlayer {
         if (SampPlayers.ids[`id${playerid}`] !== undefined) {
