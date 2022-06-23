@@ -11,6 +11,8 @@ export * from "./SampPlayer";
 export {getAllVehicle} from "./getAllVehicle";
 export {getPlayers} from "./getPlayers";
 export {rgba} from "./rgba";
+export * as ComponentCosts from './ComponentCosts';
+export * as ValidComponents from './ValidComponents';
 
 // legacy exports
 export * as SampFunctions from './SampFunctions';
