@@ -47,6 +47,10 @@ export class SampVehicle {
     }
 
     private _vehicleId: number
+    public state: Record<string, any> = {};
+    setState(newState: Record<string, any>) {
+        this.state = {...this.state, ...newState};
+    }
 
     public get vehicleId(): number {
         return this._vehicleId
