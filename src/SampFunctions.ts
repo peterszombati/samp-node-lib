@@ -1527,7 +1527,7 @@ export const IsVehicleStreamedIn = (vehicleid: number, forplayerid: number): num
 export const GetVehiclePos = (vehicleid: number) => {
     const values = samp.callNative('GetVehiclePos', 'iFFF', vehicleid);
     if (values.length < 3) {
-        throw "VehicleID " + vehicleid + " not found";
+        throw new Error("VehicleID " + vehicleid + " not found")
     }
     return {
         x: values[0],
@@ -1697,7 +1697,7 @@ export const SetVehicleAngularVelocity = (vehicleid: number, X: number, Y: numbe
 export const GetVehicleDamageStatus = (vehicleid: number) => {
     const values = samp.callNative('GetVehicleDamageStatus', 'iIIII', vehicleid);
     if (values.length < 4) {
-        throw "VehicleID " + vehicleid + " not found";
+        throw new Error("VehicleID " + vehicleid + " not found")
     }
     return {
         panels: values[0],
@@ -1714,7 +1714,7 @@ export const UpdateVehicleDamageStatus = (vehicleid: number, panels: number, doo
 export const GetVehicleModelInfo = (vehiclemodel: number, infotype: VEHICLE_MODEL_INFO) => {
     const values = samp.callNative('GetVehicleModelInfo', 'iiFFF', vehiclemodel, infotype);
     if (values.length < 3) {
-        throw "ModelID " + vehiclemodel + " not found";
+        throw new Error("ModelID " + vehiclemodel + " not found")
     }
     return {
         x: values[0],
