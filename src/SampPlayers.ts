@@ -4,6 +4,9 @@ export class SampPlayers {
     static ids: any = {};
 
     static getNewClass(playerid: number): SampPlayer {
+        if (SampPlayers.ids[`id${playerid}`] !== undefined) {
+            delete SampPlayers.ids[`id${playerid}`];
+        }
         SampPlayers.ids[`id${playerid}`] = new SampPlayer(playerid);
         return SampPlayers.ids[`id${playerid}`];
     }
