@@ -8,6 +8,9 @@ export * from "./TextDraws";
 export * from "./VehicleNames";
 export * from "./DynamicObject";
 export * from "./SampPlayer";
+
+export * from "./SmartDialog";
+
 export {getAllVehicle} from "./getAllVehicle";
 export {getPlayers} from "./getPlayers";
 export {rgba} from "./rgba";
