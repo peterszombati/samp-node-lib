@@ -214,7 +214,7 @@ export enum CARMODTYPE {
 export enum BODY_PARTS {
     TORSO = 3,
     GROIN,
-    LEFT_ARM ,
+    LEFT_ARM,
     RIGHT_ARM,
     LEFT_LEG,
     RIGHT_LEG,

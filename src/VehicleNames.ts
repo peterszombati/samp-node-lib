@@ -238,14 +238,14 @@ export const vehicleNames = [
     "Utility Trailer"
 ];
 
-const simplified_vehicleNames = vehicleNames.map(name => name.toLowerCase().replace(/([^a-z])/g,''))
+const simplified_vehicleNames = vehicleNames.map(name => name.toLowerCase().replace(/([^a-z])/g, ''))
 
 export function GetVehicleName(vehicleid: number) {
     return vehicleNames[GetVehicleModel(vehicleid) - 400];
 }
 
 export function GetVehicleModelId(vehicleName: string): number | null {
-    vehicleName = vehicleName.toLowerCase().replace(/([^a-z])/g,'')
+    vehicleName = vehicleName.toLowerCase().replace(/([^a-z])/g, '')
     const potential = simplified_vehicleNames.map((name, i) => ({
         name,
         i,

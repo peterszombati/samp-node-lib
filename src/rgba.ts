@@ -3,16 +3,16 @@ export function rgba(value: string): number {
         if (value.length === 4) {
             return parseInt(
                 value.charAt(1)
-                +  value.charAt(1)
-                +  value.charAt(2)
-                +  value.charAt(2)
-                +  value.charAt(3)
-                +  value.charAt(3)
-                + 'FF',16)
+                + value.charAt(1)
+                + value.charAt(2)
+                + value.charAt(2)
+                + value.charAt(3)
+                + value.charAt(3)
+                + 'FF', 16)
         } else if (value.length === 7) {
-            return parseInt(value.slice(1, value.length) + 'FF',16)
+            return parseInt(value.slice(1, value.length) + 'FF', 16)
         } else if (value.length === 9) {
-            return parseInt(value.slice(1, value.length),16)
+            return parseInt(value.slice(1, value.length), 16)
         }
         //TODO console.warn(new Error("invalid hex color:" + JSON.stringify({value,time:new Date().toISOString()})))
         return 255
