@@ -1,7 +1,11 @@
 import {TextDraw} from "./TextDraw";
 
 samp.on('OnPlayerClickPlayerTextDraw', (playerid, playertextid) => {
-    TextDraws.onclick(playerid, playertextid);
+    (TextDraws.tds[`id${playerid}`] || []).forEach((td: TextDraw) => {
+        if (td.textid === playertextid) {
+            td.callback.forEach(c => c(playerid));
+        }
+    })
 });
 
 samp.on('OnPlayerDisconnect', (playerid) => {
@@ -38,13 +42,5 @@ export class TextDraws {
             this.tds[`id${playerid}`] = [];
         }
         this.tds[`id${playerid}`].push(td);
-    }
-
-    static onclick(playerid: number, textid: number) {
-        (this.tds[`id${playerid}`] || []).forEach((td: TextDraw) => {
-            if (td.textid === textid) {
-                td.callback.forEach(c => c(playerid));
-            }
-        })
     }
 }

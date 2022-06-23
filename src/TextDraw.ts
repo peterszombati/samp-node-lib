@@ -22,8 +22,29 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
  */
 import {TEXTDRAW_ALIGN} from "./SampEnum";
-import * as SampFunctions from "./SampFunctions";
 import {TextDraws} from "./TextDraws";
+import {
+    CreatePlayerTextDraw,
+    PlayerTextDrawSetSelectable,
+    PlayerTextDrawShow,
+    PlayerTextDrawHide,
+    PlayerTextDrawSetString,
+    PlayerTextDrawDestroy,
+    PlayerTextDrawLetterSize,
+    PlayerTextDrawTextSize,
+    PlayerTextDrawAlignment,
+    PlayerTextDrawColor,
+    PlayerTextDrawUseBox,
+    PlayerTextDrawBoxColor,
+    PlayerTextDrawSetShadow,
+    PlayerTextDrawSetOutline,
+    PlayerTextDrawBackgroundColor,
+    PlayerTextDrawFont,
+    PlayerTextDrawSetProportional,
+    PlayerTextDrawSetPreviewRot,
+    PlayerTextDrawSetPreviewVehCol,
+    PlayerTextDrawSetPreviewModel
+} from "./SampFunctions";
 
 export interface TextDrawConfig {
     x?: number,
@@ -68,7 +89,7 @@ export class TextDraw {
         this.playerid = playerid;
         this.config = config;
         this._name = name;
-        this._textid = SampFunctions.CreatePlayerTextDraw(playerid, config.x || 0, config.y || 0, config.text || '');
+        this._textid = CreatePlayerTextDraw(playerid, config.x || 0, config.y || 0, config.text || '');
         this.setState(config);
         TextDraws.add(playerid, this);
         return this;
@@ -96,7 +117,7 @@ export class TextDraw {
         this._callback.push(callBack);
         if (this.config.setSelectable !== 1 && this._textid !== null) {
             this.config.setSelectable = 1;
-            SampFunctions.PlayerTextDrawSetSelectable(this.playerid, this._textid, 1);
+            PlayerTextDrawSetSelectable(this.playerid, this._textid, 1);
         }
         return this;
     }
@@ -105,7 +126,7 @@ export class TextDraw {
         if (this._textid === null) {
             return this;
         }
-        SampFunctions.PlayerTextDrawShow(this.playerid, this._textid);
+        PlayerTextDrawShow(this.playerid, this._textid);
         return this;
     }
 
@@ -113,7 +134,7 @@ export class TextDraw {
         if (this._textid === null) {
             return this;
         }
-        SampFunctions.PlayerTextDrawHide(this.playerid, this._textid);
+        PlayerTextDrawHide(this.playerid, this._textid);
         return this;
     }
 
@@ -121,7 +142,7 @@ export class TextDraw {
         if (this._textid === null) {
             return this;
         }
-        SampFunctions.PlayerTextDrawSetString(this.playerid, this._textid, value);
+        PlayerTextDrawSetString(this.playerid, this._textid, value);
         return this;
     }
 
@@ -129,7 +150,7 @@ export class TextDraw {
         if (this._textid === null) {
             return this;
         }
-        SampFunctions.PlayerTextDrawDestroy(this.playerid, this._textid);
+        PlayerTextDrawDestroy(this.playerid, this._textid);
         this._textid = null;
     }
 
@@ -139,52 +160,52 @@ export class TextDraw {
         }
         this.config = {...this.config, ...config};
         if (config.text !== undefined) {
-            SampFunctions.PlayerTextDrawSetString(this.playerid, this._textid, config.text);
+            PlayerTextDrawSetString(this.playerid, this._textid, config.text);
         }
         if (config.letterSize !== undefined) {
-            SampFunctions.PlayerTextDrawLetterSize(this.playerid, this._textid, config.letterSize.x, config.letterSize.y);
+            PlayerTextDrawLetterSize(this.playerid, this._textid, config.letterSize.x, config.letterSize.y);
         }
         if (config.textSize !== undefined) {
-            SampFunctions.PlayerTextDrawTextSize(this.playerid, this._textid, config.textSize.x, config.textSize.y);
+            PlayerTextDrawTextSize(this.playerid, this._textid, config.textSize.x, config.textSize.y);
         }
         if (config.align !== undefined) {
-            SampFunctions.PlayerTextDrawAlignment(this.playerid, this._textid, config.align);
+            PlayerTextDrawAlignment(this.playerid, this._textid, config.align);
         }
         if (config.color !== undefined) {
-            SampFunctions.PlayerTextDrawColor(this.playerid, this._textid, config.color);
+            PlayerTextDrawColor(this.playerid, this._textid, config.color);
         }
         if (config.useBox !== undefined) {
-            SampFunctions.PlayerTextDrawUseBox(this.playerid, this._textid, config.useBox);
+            PlayerTextDrawUseBox(this.playerid, this._textid, config.useBox);
         }
         if (config.boxColor !== undefined) {
-            SampFunctions.PlayerTextDrawBoxColor(this.playerid, this._textid, config.boxColor);
+            PlayerTextDrawBoxColor(this.playerid, this._textid, config.boxColor);
         }
         if (config.shadowSize !== undefined) {
-            SampFunctions.PlayerTextDrawSetShadow(this.playerid, this._textid, config.shadowSize);
+            PlayerTextDrawSetShadow(this.playerid, this._textid, config.shadowSize);
         }
         if (config.outlineSize !== undefined) {
-            SampFunctions.PlayerTextDrawSetOutline(this.playerid, this._textid, config.outlineSize);
+            PlayerTextDrawSetOutline(this.playerid, this._textid, config.outlineSize);
         }
         if (config.backgroundColor !== undefined) {
-            SampFunctions.PlayerTextDrawBackgroundColor(this.playerid, this._textid, config.backgroundColor);
+            PlayerTextDrawBackgroundColor(this.playerid, this._textid, config.backgroundColor);
         }
         if (config.font !== undefined) {
-            SampFunctions.PlayerTextDrawFont(this.playerid, this._textid, config.font);
+            PlayerTextDrawFont(this.playerid, this._textid, config.font);
         }
         if (config.setProportional !== undefined) {
-            SampFunctions.PlayerTextDrawSetProportional(this.playerid, this._textid, config.setProportional);
+            PlayerTextDrawSetProportional(this.playerid, this._textid, config.setProportional);
         }
         if (config.setSelectable !== undefined) {
-            SampFunctions.PlayerTextDrawSetSelectable(this.playerid, this._textid, config.setSelectable);
+            PlayerTextDrawSetSelectable(this.playerid, this._textid, config.setSelectable);
         }
         if (config.previewRot !== undefined) {
-            SampFunctions.PlayerTextDrawSetPreviewRot(this.playerid, this._textid, config.previewRot.fRotX, config.previewRot.fRotY, config.previewRot.fRotZ, config.previewRot.fZoom);
+            PlayerTextDrawSetPreviewRot(this.playerid, this._textid, config.previewRot.fRotX, config.previewRot.fRotY, config.previewRot.fRotZ, config.previewRot.fZoom);
         }
         if (config.vehicleColor !== undefined) {
-            SampFunctions.PlayerTextDrawSetPreviewVehCol(this.playerid, this._textid, config.vehicleColor.color1, config.vehicleColor.color2);
+            PlayerTextDrawSetPreviewVehCol(this.playerid, this._textid, config.vehicleColor.color1, config.vehicleColor.color2);
         }
         if (config.previewModel !== undefined) {
-            SampFunctions.PlayerTextDrawSetPreviewModel(this.playerid, this._textid, config.previewModel);
+            PlayerTextDrawSetPreviewModel(this.playerid, this._textid, config.previewModel);
         }
         return this;
     }
