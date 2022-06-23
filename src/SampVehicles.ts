@@ -1,7 +1,7 @@
 import {SampVehicle} from "./SampVehicle"
 
 export class SampVehicles {
-    static ids: any = {};
+    static ids: Record<string, SampVehicle> = {};
 
     static getNewClass(vehicleid: number): SampVehicle {
         if (SampVehicles.ids[`id${vehicleid}`] !== undefined) {
