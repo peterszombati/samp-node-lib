@@ -72,6 +72,7 @@ export class SampPlayer extends SampPlayerNativeFunctions {
             delete this.dialog[`id${dialogid}`]
             throw new Error('player is not connected')
         }
+        promise.then(() => delete this.dialog[`id${dialogid}`])
         return promise
     }
 }
