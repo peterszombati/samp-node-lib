@@ -16,6 +16,7 @@ export * as ValidComponents from './ValidComponents';
 export * from "./SampVehicles";
 export * from "./SampPlayers";
 export * from "./SampVehicle";
+export * from "./createPromise";
 
 // legacy exports
 export * as SampFunctions from './SampFunctions';
