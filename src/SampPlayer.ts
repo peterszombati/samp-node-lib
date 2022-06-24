@@ -7,6 +7,7 @@ import {createPromise} from "./createPromise";
 export class SampPlayer extends SampPlayerNativeFunctions {
     state: Record<string, any> = {};
     private dialog: Record<string, (result: {response: number, listitem: number, inputtext: string}) => void> = {};
+    private variables: any = {};
 
     constructor(playerid: number) {
         super(playerid);
@@ -74,5 +75,34 @@ export class SampPlayer extends SampPlayerNativeFunctions {
         }
         promise.then(() => delete this.dialog[`id${dialogid}`])
         return promise
+    }
+
+    setVariable(name: string, value: any): void {
+        if(!this.variables[`id${this.playerid}`]) this.variables[`id${this.playerid}`] = [];
+        const index = this.variables[`id${this.playerid}`].findIndex((f: any) => f.name == name);
+        if(index == -1) {
+            this.variables[`id${this.playerid}`].push({name: name, value: value});
+        } else {
+            this.variables[`id${this.playerid}`][index].value = value;
+        }
+    }
+
+    setVariables(values: { [key: string]: any }): void {
+        const array = Object.entries(values);
+        array.forEach((value) => {
+            this.setVariable(value[0], value[1]);
+        });
+    }
+    
+    getVariable(name: string): any {
+        if(!this.variables[`id${this.playerid}`]) return null;
+        const result = this.variables[`id${this.playerid}`].find((f: any) => f.name === name); 
+        if(!result) return null;
+        return result.value;
+    }
+
+    getVariables(): [{name: string, value: any}]|[] {
+        if(!this.variables[`id${this.playerid}`]) return [];
+        return this.variables[`id${this.playerid}`];
     }
 }
