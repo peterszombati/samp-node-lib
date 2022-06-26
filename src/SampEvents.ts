@@ -203,12 +203,12 @@ export const OnDialogResponse = <P = Record<string, any>>(func: (player: SampPla
     samp.on('OnDialogResponse', ((playerid, dialogid, response, listitem, inputtext) => func(SampPlayers.getClass(playerid), dialogid, response, listitem, inputtext)));
 }
 
-export const OnPlayerTakeDamage = <P = Record<string, any>>(func: (player: SampPlayer<P>, issuerid: number, amount: number, weaponid: number, bodypart: BODY_PARTS) => void) => {
-    samp.on('OnPlayerTakeDamage', ((playerid, issuerid, amount, weaponid, bodypart) => func(SampPlayers.getClass(playerid), issuerid, amount, weaponid, bodypart)));
+export const OnPlayerTakeDamage = <P = Record<string, any>>(func: (player: SampPlayer<P>, issuer: SampPlayer<P>, amount: number, weaponid: number, bodypart: BODY_PARTS) => void) => {
+    samp.on('OnPlayerTakeDamage', ((playerid, issuerid, amount, weaponid, bodypart) => func(SampPlayers.getClass(playerid), SampPlayers.getClass(issuerid), amount, weaponid, bodypart)));
 }
 
-export const OnPlayerGiveDamage = <P = Record<string, any>>(func: (player: SampPlayer<P>, damagedid: number, amount: number, weaponid: number, bodypart: number) => void) => {
-    samp.on('OnPlayerGiveDamage', ((playerid, damagedid, amount, weaponid, bodypart) => func(SampPlayers.getClass(playerid), damagedid, amount, weaponid, bodypart)));
+export const OnPlayerGiveDamage = <P = Record<string, any>>(func: (player: SampPlayer<P>, damaged: SampPlayer<P>, amount: number, weaponid: number, bodypart: number) => void) => {
+    samp.on('OnPlayerGiveDamage', ((playerid, damagedid, amount, weaponid, bodypart) => func(SampPlayers.getClass(playerid), SampPlayers.getClass(damagedid), amount, weaponid, bodypart)));
 }
 
 export const OnPlayerGiveDamageActor = <P = Record<string, any>>(func: (player: SampPlayer<P>, damaged_actorid: number, amount: number, weaponid: number, bodypart: number) => void) => {

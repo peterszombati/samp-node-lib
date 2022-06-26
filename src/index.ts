@@ -17,6 +17,7 @@ export * from "./SampVehicles";
 export * from "./SampPlayers";
 export * from "./SampVehicle";
 export * from "./createPromise";
+export * from "./Game";
 
 // legacy exports
 export * as SampFunctions from './SampFunctions';
